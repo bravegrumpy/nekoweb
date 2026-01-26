@@ -17,6 +17,7 @@
   "packageManager": "pnpm@10.26.2",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-navigation": "^1.0.5"
+    "@11ty/eleventy-navigation": "^1.0.5",
+    "@11ty/eleventy-plugin-pug": "^1.0.0"
   }
 }
