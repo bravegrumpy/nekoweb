@@ -13,6 +13,8 @@ jobs:
 
       - name: Install Dependancies
         run: bun install
+      
+      - name: Build
         run: bunx @11ty/eleventy
       
       - name: deploy2nekoweb
