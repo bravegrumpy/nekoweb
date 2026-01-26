@@ -6,7 +6,7 @@ jobs:
     name: deploy2nekoweb
     steps:
       - name: Checkout
-        uses: actions/checkout@4
+        uses: actions/checkout@latest
       
       - name: Eleventy Action
         uses: TartanLlama/actions-eleventy@v1.3
