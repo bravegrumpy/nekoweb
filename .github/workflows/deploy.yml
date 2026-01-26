@@ -8,6 +8,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install Deps
+        run: bun install --frozen-lockfile
+
       - name: Build
         run: bunx @11ty/eleventy
       
