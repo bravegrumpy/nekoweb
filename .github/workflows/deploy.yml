@@ -9,8 +9,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Build
-        with:
-          runs: bunx @11ty/exec
+        run: bunx @11ty/eleventy
       
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@main
