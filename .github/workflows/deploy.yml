@@ -20,7 +20,7 @@ jobs:
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@main
         with: 
-          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
+          nekoweb-api-key: ${{ secrets.NEKOWEB_TOKEN }}
           nekoweb-domain: 'bravegrumpy.nekoweb.org'
           nekoweb-username: 'bravegrumpy'
           directory: 'dist'
