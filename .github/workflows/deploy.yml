@@ -7,9 +7,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-      
-      - name: Eleventy Action
-        uses: TartanLlama/actions-eleventy@v1.3
+
+      - name: Build
+        with:
+          runs: bunx @11ty/exec
       
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@main
