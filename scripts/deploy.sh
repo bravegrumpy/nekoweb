@@ -1,4 +1,5 @@
 #!/bin/bash
+
 source .env
 
 curl -X POST \
