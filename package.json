@@ -10,7 +10,7 @@
     "dev": "pnpm dlx @11ty/eleventy --serve",
     "debug": "cross-env DEBUG=Eleventy* pnpm dlx @11ty/eleventy",
     "debug:save": "pnpm debug > debug.md 2>&1",
-    "deploy": "./scripts/deploy.jsh"
+    "deploy": "./scripts/deploy.sh"
   },
   "keywords": [],
   "author": "",
