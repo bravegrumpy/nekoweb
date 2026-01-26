@@ -1,0 +1,20 @@
+html {
+    background: tan;
+    color: darkcyan;
+}
+
+a {
+    color: maroon;
+}
+
+a:visited {
+    color: darkmagenta;
+}
+html.dark {
+    background-color: black;
+    color: greenyellow;
+}
+
+.dark a {
+    color: cyan;
+}

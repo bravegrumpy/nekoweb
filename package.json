@@ -1,0 +1,22 @@
+{
+  "name": "bravegrumpy-nekoweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pnpm dlx @11ty/eleventy",
+    "dev": "pnpm dlx @11ty/eleventy --serve",
+    "debug": "cross-env DEBUG=Eleventy* pnpm dlx @11ty/eleventy",
+    "debug:save": "pnpm debug > debug.md 2>&1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.26.2",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-navigation": "^1.0.5"
+  }
+}

@@ -1,0 +1,12 @@
+html {
+    background: tan;
+    color: darkcyan;
+}
+
+a {
+    color: maroon;
+}
+
+a:visited {
+    color: darkmagenta;
+}

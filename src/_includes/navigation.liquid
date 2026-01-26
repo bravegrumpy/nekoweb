@@ -1,0 +1,7 @@
+<nav>
+    {% assign navPages = collections.all | eleventyNavigation %}
+    {% for entry in navPages %}
+        <a href="{{ entry.url }}">{{ entry.title }}</a>
+    {% endfor %}
+    <button id="theme-toggle">Change Theme</button>
+</nav>
