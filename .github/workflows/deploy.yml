@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@4
-
-      - name: build
-        uses: TartanLlama/actions-eleventy@master
+      
+      - name: Eleventy Action
+        uses: TartanLlama/actions-eleventy@v1.3
       
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@main
