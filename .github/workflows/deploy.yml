@@ -1,0 +1,20 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: deploy2nekoweb
+    steps:
+      - name: Checkout
+        uses: actions/checkout@4
+
+      - name: build
+        uses: bunx @11ty/eleventy
+      
+      - name: deploy2nekoweb
+        uses: indiefellas/deploy2nekoweb@main
+        with: 
+          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
+          nekoweb-domain: 'bravegrumpy.nekoweb.org'
+          nekoweb-username: 'bravegrumpy'
+          directory: 'dist'
