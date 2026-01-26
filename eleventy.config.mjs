@@ -7,7 +7,7 @@ export default async function(eleventyConfig) {
 export const config = {
     dir: {
         input: "src",
-        output: "dist",
+        output: "docs",
         includes: "_includes",
         layouts: "_layouts",
         data: "_data"
