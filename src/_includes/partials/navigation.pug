@@ -1,6 +1,9 @@
 nav
     - const navPages = collections.all.filter(item => item.data.eleventyNavigation)
-    a(href="/") Home
+    each entry in navPages
+        a(href=entry.url)= entry.url
+        |
+        |
     |
     |
     button#theme-toggle Change Theme
