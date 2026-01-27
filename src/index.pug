@@ -2,6 +2,19 @@
 title: Home Page
 eleventyNavigation:
     key: Home
+    order: 1
 layout: layout.pug
 ---
-include _includes/content.pug
+h2 Some Content 
+|
+p Look I wanted to create some content, but in pug.
+
+p 
+| I like the compromise that
+|
+a(href="https://pugjs.org" target="_blank" rel="nofollow noreferrer") Pug
+|
+| gives between markdown and HTML.  My main problem with HTML is that it is awkward to reach for the #[code &lt;] & #[code &gt;] wheh creating large amounts of text content.  It #[em significantly] slows down the writing process #[em because] I need to think about the open and close tags. However, on the other hand, Markdown makes it rather challenging to add attributes to tags.  Furthermore, there is usually some javascript library needed if one wants to customize markdown elements. #[a(href="https://spec.commonmark.org/0.31.2/") Commonmark] is not so bad but really is limited to text-only esque content. While it is useful that Markdown can accept raw html, it doesn't solve the bracket problem.
+
+.included-content 
+    include:markdown-it _includes/content.md
