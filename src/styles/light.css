@@ -3,10 +3,10 @@ html {
     color: darkcyan;
 }
 
-a {
+* a {
     color: maroon;
 }
 
-a:visited {
+* a:visited {
     color: darkmagenta;
 }

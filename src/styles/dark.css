@@ -3,6 +3,10 @@ html.dark {
     color: greenyellow;
 }
 
-.dark a {
+* .dark a {
     color: cyan;
+}
+
+* .dark a:visited {
+    color: orange;
 }
