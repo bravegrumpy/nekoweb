@@ -9,8 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@indiefellas/astro-adapter-nekoweb": "^3.7.1",
-    "astro": "^5.17.1",
-    "typescript": "^5.9.3"
+    "astro": "^5.17.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.1.0"
   }
 }

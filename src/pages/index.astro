@@ -1,7 +1,13 @@
 ---
+export const prerender = true
 import Base from "@/layouts/Base.astro"
+import { Content } from "@/pages/posts/post-1.md"
+import Stage from "@/components/Stage.astro"
 ---
 
 <Base pageTitle="Home">
-	<p>Look</p>
+	<Content />
+	<Stage>
+		<p>Hello World</p>
+	</Stage>
 </Base>
