@@ -22,7 +22,10 @@
 
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
 .follow {
-
+    width: 600px;
+    height: 25px;
+    background-color: darkslategray;
+    color: whitesmoke;
 }
 
 /* Style for your post box (must start with ".post-box") */
