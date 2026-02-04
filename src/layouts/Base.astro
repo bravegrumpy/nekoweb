@@ -1,4 +1,9 @@
 ---
+import "@/styles/global.css"
+import "@fontsource/coming-soon"
+import "@fontsource/patrick-hand"
+import "@fontsource/indie-flower"
+
 interface Props {
     pageTitle?: string;
 }
@@ -16,17 +21,22 @@ const title = pageTitle ? `${pageTitle} | BraveGrumpy` : `BraveGrumpy`
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<script>
+			import "basecoat-css/all"
+		</script>
+		<script src="https://tweakcn.com/live-preview.min.js"></script>
+		<script src="/scripts/themeToggle.js" is:inline></script>
 	</head>
-	<body>
+	<body class="bg-background w-[500px] mx-auto my-0">
 		<h1>{pageTitle}</h1>
         <slot />
 	</body>
 </html>
 
-<style>
+<!-- <style>
 	body {
 		background-color: bisque;
 		width: 500px;
 		margin: 0px auto;
 	}
-</style>
+</style> -->

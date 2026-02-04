@@ -10,6 +10,13 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.15",
-    "astro": "^5.17.1"
+    "@fontsource/coming-soon": "^5.2.8",
+    "@fontsource/indie-flower": "^5.2.7",
+    "@fontsource/patrick-hand": "^5.2.8",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.17.1",
+    "basecoat-css": "^0.3.10",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
   }
 }
