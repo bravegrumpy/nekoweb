@@ -24,11 +24,37 @@ const title = pageTitle ? `${pageTitle} | BraveGrumpy` : `BraveGrumpy`
 		<script>
 			import "basecoat-css/all"
 		</script>
-		<script src="https://tweakcn.com/live-preview.min.js"></script>
-		<script src="/scripts/themeToggle.js" is:inline></script>
+		<script>
+			(() => {
+				try {
+					const stored = localStorage.getItem('themeMode')
+					if (
+						stored ? 
+						stored === 'dark' : 
+						matchMedia(`(prefers-color-scheme: dark)`).matches) {
+							document.documentElement.classList.add('dark')
+					}
+				} catch(_){}
+				
+				const apply = (dark: boolean) => {
+					document.documentElement.classList.toggle('dark', dark);
+					try {
+						localStorage.setItem('themeMode', dark ? 'dark' : 'light')
+					} catch(_){}
+				};
+				
+				document.addEventListener('basecoat:theme', (event) => {
+					const mode = event.detail?.mode;
+					apply(mode === 'dark' ? true
+					: mode === 'light' ? false
+					: !document.documentElement.classList.contains('dark')
+				)
+			})
+			})();
+		</script>
 	</head>
 	<body class="bg-background w-[500px] mx-auto my-0">
-		<h1>{pageTitle}</h1>
+		<h1 class="font-bold text-3xl text-foreground">{pageTitle}</h1>
         <slot />
 	</body>
 </html>

@@ -10,7 +10,7 @@
     } catch(_){}
     
     const apply = (dark: boolean) => {
-        document.documentElement.classList.toggle('dark', dark);
+        document.documentElement.classList.toggle('dark', dark);j
         try {
             localStorage.setItem('themeMode', dark ? 'dark' : 'light')
         } catch(_){}
