@@ -4,5 +4,6 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
     output: "static",
-    site: `https://${process.env.DOMAIN}`
+    // site: `https://${process.env.DOMAIN}`
+    site: "https://bravegrumpy.nekoweb.org"
 });
