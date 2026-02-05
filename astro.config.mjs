@@ -13,4 +13,11 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  redirects: {
+    "/not-found": {
+      status: 301,
+      destination: "/404"
+    }
+  }
 });
