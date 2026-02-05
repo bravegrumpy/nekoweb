@@ -9,7 +9,16 @@ interface Props {
 }
 let { pageTitle }: Props = Astro.props;
 
-const title = pageTitle ? `${pageTitle} | BraveGrumpy` : `BraveGrumpy`
+const title = pageTitle ? `${pageTitle} | BraveGrumpy` : `BraveGrumpy`;
+
+import Navigation, { type link } from "@/components/Navigation.astro";
+import Sidebar, { type sideLink } from "@/components/Sidebar.astro"
+
+const nav: sideLink[] = [
+	{ href: "/", text: "Home", icon: "iconify icon-[streamline-freehand-color--home-chimney-2] bg-amber-100" },
+	// { href: "/bootstrap", text: "Bootstrap" }
+	// { href: "/posts/post-1", text: "Post", icon: 'iconify-color icon-[streamline-stickies-color--pen-duo]' }
+]
 ---
 
 <html lang="en">
@@ -17,7 +26,6 @@ const title = pageTitle ? `${pageTitle} | BraveGrumpy` : `BraveGrumpy`
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.png" />
-		<!-- <link rel="icon" href="/favicon.ico" /> -->
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -44,6 +52,7 @@ const title = pageTitle ? `${pageTitle} | BraveGrumpy` : `BraveGrumpy`
 				};
 				
 				document.addEventListener('basecoat:theme', (event) => {
+					//@ts-expect-error
 					const mode = event.detail?.mode;
 					apply(mode === 'dark' ? true
 					: mode === 'light' ? false
@@ -54,6 +63,8 @@ const title = pageTitle ? `${pageTitle} | BraveGrumpy` : `BraveGrumpy`
 		</script>
 	</head>
 	<body class="bg-background w-[500px] mx-auto my-0">
+		<Sidebar side="left" defaultState={false} links={nav} />
+		<Navigation links={nav}/>
 		<h1 class="font-bold text-3xl text-foreground">{pageTitle}</h1>
         <slot />
 	</body>

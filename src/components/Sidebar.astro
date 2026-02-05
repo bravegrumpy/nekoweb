@@ -1,0 +1,43 @@
+---
+import { type link } from "@/components/Navigation.astro";
+
+export interface sideLink extends link {
+    icon?: string | false;
+}
+
+interface Props {
+  side?: "left" | "right";
+  defaultState?: boolean;
+  links: sideLink[];
+}
+const {
+  side = "left",
+  defaultState = false,
+  links,
+}: Props = Astro.props;
+---
+
+<aside class="sidebar" data-side={side} aria-hidden={`${defaultState}`}>
+  <nav aria-label="Sidebar navigation">
+    <section class="scrollbar">
+      <div role="group" aria-labelledby="group-label-content-1">
+        <h3 id="group-label-content-1">Navigation</h3>
+        <ul>
+          {
+            links.map((lnk: link) => {
+              return (
+                <li>
+                    <span 
+                        class={`${lnk.icon} text-3xl`}></span>
+                    <a href={lnk.href} class="inline">
+                    {lnk.text}
+                  </a>
+                </li>
+              );
+            })
+          }
+        </ul>
+      </div>
+    </section>
+  </nav>
+</aside>

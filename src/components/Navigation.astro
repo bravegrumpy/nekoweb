@@ -1,0 +1,26 @@
+---
+import ThemeToggle from "@/components/ThemeToggle.astro"
+
+export interface link {
+    href: string;
+    text: string;
+}
+
+interface Props {
+    links: link[];
+}
+const { links }:Props = Astro.props;
+---
+<nav class="button-group flex flex-col lg:flex-row gap-5 m-5 w-full">
+    <button type="button" class="btn-icon" onclick="document.dispatchEvent(new CustomEvent('basecoat:sidebar'))">
+        <span class="iconify-color icon-[streamline-stickies-color--book-library]"></span>
+    </button>
+    {
+        links.map((lnk: link) => {
+            return(
+                <a class="btn-secondary" href={lnk.href}>{lnk.text}</a>
+            );
+        })
+    }
+    <ThemeToggle />
+</nav>
