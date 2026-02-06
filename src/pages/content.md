@@ -3,7 +3,7 @@ title: Stuff
 layout: ../layouts/Base.astro
 ---
 
-<h2 class="text-5xl font-serif text-secondary-foreground">Stuff</h2>
+<h2 class="text-5xl font-serif text-rose-800 dark:text-rose-50">Stuff</h2>
 
 <div class="card">
     
@@ -21,7 +21,7 @@ I'm fairly certain I can just use the github action.
 
 </div>
 
-<h3 class="text-3xl font-serif text-secondary-foreground">Links</h3>
+<h3 class="text-3xl font-serif text-rose-80l dark:text-rose-100">Links</h3>
 
 1. <a href="/" class="btn-link">home</a>
 1. <a href="/posts/post-1" class="btn-link">post</a>
