@@ -47,4 +47,24 @@ I'm fairly certain I can just use the github action.
 
 </div>
 
+
+<div class="card">
+
+<header>
+
+<h3 class='text-3xl font-serif'>Some test code</h3>
+
+</header>
+
+<section>
+
+
+```js
+console.log("hello")
+```
+
+</section>
+
+</div>
+
 </div>
