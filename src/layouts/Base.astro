@@ -10,8 +10,9 @@ import "@fontsource-variable/martian-mono";
 
 interface Props {
     pageTitle?: string;
+	currPage?: string;
 }
-let { pageTitle }: Props = Astro.props;
+let { pageTitle, currPage="/" }: Props = Astro.props;
 
 const title = pageTitle ? `${pageTitle} | BraveGrumpy` : `BraveGrumpy`;
 
@@ -22,7 +23,8 @@ const nav: sideLink[] = [
 	{ href: "/", text: "Home", icon: "iconify icon-[streamline-freehand--home-chimney-2]" },
 	// { href: "/bootstrap", text: "Bootstrap" }
 	// { href: "/posts/post-1", text: "Post", icon: 'iconify-color icon-[streamline-stickies-color--pen-duo]' }
-	{ href: "/content", text: "Content", icon: "iconify icon-[streamline-freehand--content-paper-edit]"}
+	{ href: "/content", text: "Content", icon: "iconify icon-[streamline-freehand--content-paper-edit]"},
+	{ href: "/about", text: "About", icon: "iconify-color icon-[streamline-stickies-color--online-information]" }
 ]
 ---
 
@@ -69,7 +71,7 @@ const nav: sideLink[] = [
 	</head>
 	<body class="bg-background max-w-[500px] lg:max-w-[600px] xl:max-w-[800px] mx-auto 2xl:max-w-[1000px]">
 		<Sidebar side="left" defaultState={false} links={nav} />
-		<Navigation links={nav}/>
+		<Navigation links={nav} currPage={currPage}/>
 		<h1 class="font-bold text-3xl text-foreground">{pageTitle}</h1>
         <slot />
 	</body>

@@ -11,8 +11,9 @@ export interface link {
 
 interface Props {
     links: link[];
+    currPage: string;
 }
-const { links }:Props = Astro.props;
+const { links, currPage }:Props = Astro.props;
 
 const currPath = Astro.url.pathname;
 
