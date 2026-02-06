@@ -1,6 +1,9 @@
 ---
 import ThemeToggle from "@/components/ThemeToggle.astro"
 
+import { Image } from "astro:assets";
+import logo from "@/images/favicon.png"
+
 export interface link {
     href: string;
     text: string;
@@ -10,17 +13,56 @@ interface Props {
     links: link[];
 }
 const { links }:Props = Astro.props;
+
+const currPath = Astro.url.pathname;
+
+function active(href:string): string {
+    if (href === currPath) { 
+        return "btn-primary"
+    }
+    return "btn-secondary";
+}
 ---
-<nav class="button-group flex flex-col lg:flex-row gap-5 m-5 w-full">
-    <button type="button" class="btn-icon" onclick="document.dispatchEvent(new CustomEvent('basecoat:sidebar'))">
-        <span class="iconify-color icon-[streamline-stickies-color--book-library]"></span>
-    </button>
+
+<nav class="button-group flex lg:flex flex-col lg:flex-row gap-5 m-5 w-full items-center justify-between">
+    <a href="/" class="hidden lg:block">
+        <Image src={logo} alt="Logo" width={75} height={75} />
+    </a>
+
+    <div id="mainNav" role="group" class="hidden lg:flex w-full lg:flex-row gap-1">
     {
         links.map((lnk: link) => {
             return(
-                <a class="btn-secondary" href={lnk.href}>{lnk.text}</a>
+                <a class={`${active(lnk.href)}`} href={lnk.href}>{lnk.text}</a>
             );
         })
     }
-    <ThemeToggle />
+    </div>
+    <div class="flex flex-row gap-2 border-2 p-2 bg-muted">
+        <button type="button" class="hidden lg:block btn-icon" onclick="document.dispatchEvent(new CustomEvent('basecoat:sidebar'))">
+            <span class="iconify-color icon-[streamline-stickies-color--book-library]"></span>
+        </button>
+        <ThemeToggle />
+        <button type="button" class="btn lg:hidden" id="menuBtn" onclick="menuToggle()">
+            <span class="iconify icon-[streamline-freehand--menu-navigation-horizontal]"></span>
+        </button>
+    </div>
 </nav>
+
+<script is:inline>
+    function menuToggle() {
+        const nav = document.getElementById("mainNav");
+        if (nav) {
+            let isOpen = nav.classList.contains("hidden")
+            if (isOpen) {
+                nav.classList.remove("hidden");
+                nav.classList.add("flex")
+                nav.classList.add("flex-col")
+            } else {
+                nav.classList.remove("flex");
+                nav.classList.remove("flex-col")
+                nav.classList.add("hidden")
+            }
+        }
+    }
+</script>
