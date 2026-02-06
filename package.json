@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.15",
+    "@fontsource-variable/montserrat": "^5.2.8",
+    "@fontsource-variable/playfair-display": "^5.2.8",
+    "@fontsource-variable/source-code-pro": "^5.2.7",
     "@fontsource/coming-soon": "^5.2.8",
     "@fontsource/indie-flower": "^5.2.7",
     "@fontsource/patrick-hand": "^5.2.8",
