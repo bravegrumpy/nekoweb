@@ -11,13 +11,13 @@ importers:
       '@astrojs/rss':
         specifier: ^4.0.15
         version: 4.0.15
-      '@fontsource-variable/montserrat':
-        specifier: ^5.2.8
-        version: 5.2.8
-      '@fontsource-variable/playfair-display':
-        specifier: ^5.2.8
-        version: 5.2.8
-      '@fontsource-variable/source-code-pro':
+      '@fontsource-variable/biorhyme':
+        specifier: ^5.2.9
+        version: 5.2.9
+      '@fontsource-variable/martian-mono':
+        specifier: ^5.2.7
+        version: 5.2.7
+      '@fontsource/capriola':
         specifier: ^5.2.7
         version: 5.2.7
       '@fontsource/coming-soon':
@@ -263,14 +263,14 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource-variable/montserrat@5.2.8':
-    resolution: {integrity: sha512-d8wykq7GCKhEOlLwEuQIOK3w3qsXNxwDlH0meru4AZZzQ4/+rZyvHWKL6BBtHdmbovSHEEQDkwkD8qYUKlcFtQ==}
+  '@fontsource-variable/biorhyme@5.2.9':
+    resolution: {integrity: sha512-ko450kummsFGX3ffMMkc0Xi3wU/Y2f4xoow5n0FS5RtOjtjiosntqU9BVr62x3KaGPl9sgIDp0n2L2U+0SC1MQ==}
 
-  '@fontsource-variable/playfair-display@5.2.8':
-    resolution: {integrity: sha512-ZzVIXPOrL85yyOvZYoBzUszIJM+xKkHqni4IYn2CVLaGQQdJR8sBeC8yFNgjxSJ7ludTwta8qpULeOFuk5X75A==}
+  '@fontsource-variable/martian-mono@5.2.7':
+    resolution: {integrity: sha512-tchlJXmyjMLQLbhYh5kCwZIVXsTxfvfTAZ32nIrszWCJnEIqTpRloMvJPOpQA9BBCaOvvV5k0nI633dlqJsPRw==}
 
-  '@fontsource-variable/source-code-pro@5.2.7':
-    resolution: {integrity: sha512-kZ0VNwnhvSA7vu5MaiO52eicQ4zC+k+8HBLZb+1js0MK/RngLy25NEUFB1y/AKd0ZMwru88T433QBcFf9m/huw==}
+  '@fontsource/capriola@5.2.7':
+    resolution: {integrity: sha512-dVcZ+wHI50326I9w9CrXWE+At0A5FGSeCKsySteIM80nIzt+2sHzZ9k2HIxE8tzU6ZO+fNSMwOZRhb+nBymqxw==}
 
   '@fontsource/coming-soon@5.2.8':
     resolution: {integrity: sha512-L2+CynMPwGjrwXq0x77IN2SOXpeuLp6wFzmSp1KxY59+hZhspiHLN7MDRKRXS1LccYLhtDk1gO40j1bpdgX1PQ==}
@@ -1988,11 +1988,11 @@ snapshots:
   '@esbuild/win32-x64@0.25.12':
     optional: true
 
-  '@fontsource-variable/montserrat@5.2.8': {}
+  '@fontsource-variable/biorhyme@5.2.9': {}
 
-  '@fontsource-variable/playfair-display@5.2.8': {}
+  '@fontsource-variable/martian-mono@5.2.7': {}
 
-  '@fontsource-variable/source-code-pro@5.2.7': {}
+  '@fontsource/capriola@5.2.7': {}
 
   '@fontsource/coming-soon@5.2.8': {}
 

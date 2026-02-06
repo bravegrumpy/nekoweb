@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "basecoat-css";
 @import "./theme.css";
+/* @import "./default-theme.css"; */
 
 @plugin "@iconify/tailwind4";
