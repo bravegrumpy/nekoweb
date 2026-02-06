@@ -22,6 +22,6 @@ I should figure out how to rename the 404 file so i dont have to manually do it 
 ### Links
 
 1. <a href="/" class="btn-link">home</a>
-1. <a href="/posts/post-1"class="btn-link">post</a>
+1. <a href="/posts/post-1" class="btn-link">post</a>
 1. <a href="/404" class="btn-link">404</a>
 1. <a href="/bootstrap" class="btn-link">bootstrap</a>
