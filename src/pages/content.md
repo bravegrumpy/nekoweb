@@ -15,6 +15,8 @@ The content rout sill no longer cause an error.
 
 I should figure out how to rename the 404 file so i dont have to manually do it every time.
 
+I'm fairly certain I can just use the github action.
+
 </section>
 
 </div>
