@@ -2,5 +2,6 @@
 @import "basecoat-css";
 /* @import "./theme.css"; */
 @import "./default-theme.css";
+@import "./ocean.css";
 
 @plugin "@iconify/tailwind4";
