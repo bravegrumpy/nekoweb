@@ -1,6 +1,5 @@
 ---
 title: Stuff
-layout: ../layouts/Base.astro
 ---
 
 <div class="flex flex-col gap-5 max-w-sm lg:max-w-4xl w-full mx-auto">
