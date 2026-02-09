@@ -1,0 +1,51 @@
+:root {
+  --ocean-light: #d9eef7;
+  --ocean-mid: #8ecae6;
+  --ocean-dark: #023047;
+  --foam: #ffffffcc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: linear-gradient(
+    180deg,
+    var(--ocean-light),
+    var(--ocean-mid)
+  );
+  color: var(--ocean-dark);
+}
+
+.page {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.header {
+  background: var(--foam);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: var(--foam);
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background: var(--ocean-dark);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+}
