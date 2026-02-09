@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-import { geistSans, geistMono } from "@/lib/fonts";
-import "@/lib/styles/globals.css"
+import { ThemeProvider } from "@/components/theme-provider";
 
+import type { Metadata } from "next";
+import { geist, geistSans, geistMono } from "@/lib/fonts";
+import "@/lib/styles/globals.css"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,9 +15,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={geist.variable} suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
