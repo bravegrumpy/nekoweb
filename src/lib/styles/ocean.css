@@ -1,0 +1,177 @@
+/* src/lib/styles/ocean.css */
+
+/*
+ * HOW TO APPLY STYLES IN SVELTEKIT:
+ *
+ * 1. GLOBAL STYLES:
+ *    - Create a CSS file (like this one) in src/lib/styles/
+ *    - Import it in your root +layout.svelte using:
+ *        import '$lib/styles/ocean.css';
+ *    - These styles apply to ALL pages/components.
+ *    - Use for resets, CSS variables, typography, and shared utilities.
+ *
+ * 2. COMPONENT-SCOPED STYLES:
+ *    - Use <style> blocks inside .svelte files.
+ *    - SvelteKit automatically scopes these styles to the component.
+ *    - They will NOT leak to child components or other pages.
+ *    - To intentionally target children, use :global() selector.
+ *
+ * 3. CONDITIONAL / DYNAMIC STYLES:
+ *    - Use class: directive  →  <div class:active={isActive}>
+ *    - Use style: directive  →  <div style:color={textColor}>
+ *    - Use ternary in class  →  <div class={big ? 'lg' : 'sm'}>
+ *
+ * 4. CSS CUSTOM PROPERTIES (VARIABLES):
+ *    - Define them globally in :root (as below).
+ *    - Override per-component using style: or inline styles.
+ *    - Great for theming (light/dark, color schemes).
+ *
+ * 5. RESPONSIVE DESIGN:
+ *    - Use CSS variables + media queries in global styles.
+ *    - Use container-relative units (%, vw, vh, clamp()).
+ *    - Mobile-first: write base styles for mobile, then @media for larger.
+ */
+
+:root {
+  /* Ocean palette */
+  --ocean-deep: #0b1e3d;
+  --ocean-mid: #1a3a5c;
+  --ocean-light: #4a8cb8;
+  --ocean-surface: #7ec8e3;
+  --ocean-foam: #d4eef7;
+  --ocean-sand: #f5e6ca;
+  --ocean-coral: #ff6b6b;
+  --ocean-kelp: #2d8a6e;
+
+  /* Gradients */
+  --gradient-ocean: linear-gradient(
+    180deg,
+    #7ec8e3 0%,
+    #4a8cb8 30%,
+    #1a3a5c 70%,
+    #0b1e3d 100%
+  );
+  --gradient-surface: linear-gradient(
+    135deg,
+    #a8d8ea 0%,
+    #7ec8e3 50%,
+    #b8d4e8 100%
+  );
+  --gradient-header: linear-gradient(
+    90deg,
+    #8bafc4 0%,
+    #a3bfcf 50%,
+    #8bafc4 100%
+  );
+
+  /* Typography */
+  --font-main: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-display: "Georgia", "Times New Roman", serif;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Responsive sizing */
+  --content-max-width: 480px;
+  --game-size: min(85vw, 400px);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --content-max-width: 600px;
+    --game-size: min(60vw, 500px);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --content-max-width: 800px;
+    --game-size: 500px;
+  }
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--ocean-deep);
+  color: var(--ocean-foam);
+  min-height: 100dvh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* Utility classes */
+.ocean-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: var(--space-lg);
+}
+
+.bubble-float {
+  animation: bubbleFloat 6s ease-in-out infinite;
+}
+
+@keyframes bubbleFloat {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-15px) scale(1.02);
+  }
+}
+
+@keyframes waveShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
