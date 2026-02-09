@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="favicon.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.73851712"
+     inkscape:cx="396.74097"
+     inkscape:cy="561.25984"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ArrowTriangleStylized"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Stylized triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m 6,0 c -3,1 -7,3 -9,5 0,0 0,-4 2,-5 -2,-1 -2,-5 -2,-5 2,2 6,4 9,5 z"
+         id="path4" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="opacity:0.5;fill:#a6d503;fill-opacity:0.8;fill-rule:evenodd;stroke:#bf3737;stroke-width:0.733867;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path2"
+       inkscape:flatsided="true"
+       sodipodi:sides="6"
+       sodipodi:cx="29.377563"
+       sodipodi:cy="49.082027"
+       sodipodi:r1="48.140732"
+       sodipodi:r2="41.691097"
+       sodipodi:arg1="-0.07448879"
+       sodipodi:arg2="0.44910999"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 77.384801,45.499398 56.48383,88.8662 8.4765931,92.448829 -18.629674,52.664657 2.2712966,9.2978553 50.278534,5.7152256 Z"
+       transform="matrix(2.0136077,0,0,2.2057753,50.40084,31.458634)" />
+    <path
+       sodipodi:type="spiral"
+       style="fill:none;fill-rule:evenodd;stroke:#bf3737;stroke-width:3.165;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowTriangleStylized)"
+       id="path1"
+       sodipodi:cx="78.101326"
+       sodipodi:cy="70.577805"
+       sodipodi:expansion="1"
+       sodipodi:revolution="4.0770226"
+       sodipodi:radius="84.404938"
+       sodipodi:argument="-17.879562"
+       sodipodi:t0="0"
+       d="m 78.101326,70.577805 c 1.760351,2.56867 -2.594022,3.640209 -4.269299,2.925819 -4.5399,-1.935954 -4.16853,-8.144672 -1.582339,-11.464418 4.626088,-5.938248 13.595797,-5.060271 18.659536,-0.238859 7.431241,7.075617 5.993769,19.126411 -1.104622,25.854655 C 80.343563,96.622693 65.118636,94.60098 56.754829,85.2069 46.229832,73.385408 48.846776,54.947406 60.546412,44.962008 74.716238,32.868353 96.387337,36.086133 107.98642,50.097071 121.65554,66.608476 117.83373,91.524362 101.50788,104.7322 82.659034,119.98117 54.490929,115.55336 39.677632,96.910176 22.845822,75.72661 27.880944,44.301256 48.843135,27.884811 72.359546,9.4680401 107.04571,15.11137 125.06362,38.393795 145.06691,64.241699 138.81473,102.19129 113.21115,121.8094 85.032762,143.4004 43.81776,136.53887 22.600434,108.61345 -0.57918709,78.105339 6.8920464,33.623391 37.139859,10.807613 69.977095,-13.961353 117.7272,-5.8801269 142.14082,26.690519 168.49971,61.8564 159.80826,112.87565 124.91443,138.88659 c -10.83657,8.07792 -23.62336,13.42276 -36.972329,15.52052"
+       transform="translate(26.301554,64.427635)" />
+  </g>
+</svg>
