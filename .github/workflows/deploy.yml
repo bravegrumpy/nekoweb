@@ -26,6 +26,8 @@ jobs:
         run: pnpm install
       
       - name: Build Artifacts
+        env:
+          PUBLIC_CONVEX_URL: 'https://scrupulous-albatross-914.convex.cloud'
         run: pnpm build
 
       - name: deploy2nekoweb
