@@ -34,4 +34,4 @@ jobs:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-domain: 'bravegrumpy.nekoweb.org'
           nekoweb-username: 'bravegrumpy'
-          directory: 'dist'
+          directory: 'build'
