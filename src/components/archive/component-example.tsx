@@ -5,7 +5,7 @@ import * as React from "react"
 import {
   Example,
   ExampleWrapper,
-} from "@/components/example"
+} from "@/components/archive/example"
 import {
   AlertDialog,
   AlertDialogAction,

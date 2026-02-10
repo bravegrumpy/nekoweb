@@ -1,5 +1,8 @@
-import { ComponentExample } from "@/components/component-example";
+import { ModeToggle } from "@/components/theme-provider";
 
 export default function Page() {
-return <ComponentExample />;
+return (<>
+    <ModeToggle mode="button" />
+    <h1>Hello</h1>
+</>);
 }
