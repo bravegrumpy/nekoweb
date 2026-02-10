@@ -8,7 +8,7 @@ const config = {
             assets: 'build',
             fallback: 'not_found.html',
             precompress: false,
-            strict: false
+            strict: true
         }),
         // paths: process.argv.includes('dev') ? '' : process.env.BASE_PATH 
     } 
