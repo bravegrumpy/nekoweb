@@ -1,9 +1,6 @@
 <script lang="ts">
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
-
-	import { page } from "$app/state";
-	// const PUBLIC_CONVEX_URL = page.data.env.PUBLIC_CONVEX_URL;
 	import { PUBLIC_CONVEX_URL } from '$env/static/public';
 	import { setupConvex } from "convex-svelte";
 
