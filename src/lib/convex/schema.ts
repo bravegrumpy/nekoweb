@@ -41,7 +41,8 @@ export default defineSchema({
 
     tasks: defineTable({
         isCompleted: v.boolean(),
-        text: v.string()
+        text: v.string(),
+        assigner: v.optional(v.string())
     }),
 
     users: defineTable({
