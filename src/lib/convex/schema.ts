@@ -3,7 +3,7 @@ import { v } from "convex/values";
 
 export default defineSchema({
     navigation: defineTable({
-        id: v.union(v.string(), v.number()),
+        id: v.string(),
         href: v.string(),
         text: v.string(),
         pageTitle: v.string(),
