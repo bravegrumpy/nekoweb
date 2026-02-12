@@ -21,5 +21,9 @@
   },
   "menuColor": "inverted",
   "menuAccent": "bold",
-  "registries": {}
+  "registries": {
+    "@glass-ui": "https://glass-ui.crenspire.com/r/{name}.json",
+    "@doras-ui": "https://ui.doras.to/r/{name}.json",
+    "@magicui": "https://magicui.design/r/{name}"
+  }
 }
