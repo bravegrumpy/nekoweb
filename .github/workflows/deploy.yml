@@ -26,8 +26,6 @@ jobs:
         run: pnpm install
       
       - name: Build Artifacts
-        env:
-          PUBLIC_CONVEX_URL: ${{ vars.PUBLIC_CONVEX_URL }}
         run: pnpm build
       
       - name: copy 404.html to not_found.html
