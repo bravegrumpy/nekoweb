@@ -49,7 +49,7 @@ export function Header() {
     return(<>
         <div className="w-full flex flex-row bg-primary/30 justify-around items-center">
             <Link href="/">
-            <Image src="/favicon.svg" alt="Logo" width={"60"} height={"60"} className="bg-indigo-300/40 rounded-lg inline px-[10px]" />
+            <Image src="/favicon.svg" alt="Logo" width={60} height={60} className="bg-indigo-300/40 rounded-lg inline px-[10px]" />
             </Link>
             <Navigation />
             <ModeToggle />
