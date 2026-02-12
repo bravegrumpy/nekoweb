@@ -1,7 +1,7 @@
 "use client"
 import * as React from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, CardAction } from "@/components/ui/card";
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 
 interface GridProps {
@@ -9,7 +9,7 @@ interface GridProps {
 }
 export function Grid({ children }:GridProps) {
     return (<>
-        <div className="xl:w-11/12 w-2/3 mx-auto flex flex-col xl:grid xl:grid-cols-5 mt-5 gap-5">
+        <div className="xl:w-11/12 w-2/3 mx-auto flex flex-col lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-5 mt-5 gap-5">
             { children ?? <Content />}
         </div>
     </>);

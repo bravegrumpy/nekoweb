@@ -2,8 +2,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header"
 
 import type { Metadata } from "next";
-import { geist, geistSans, geistMono } from "@/lib/fonts";
+import { alegreya, alegreyaSansSC, breeSerif, kodeMono } from "@/lib/fonts";
 import "@/lib/styles/globals.css"
+import { Grid } from "@/components/page-body";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,13 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={geist.variable} suppressHydrationWarning>
+    <html lang="en" className={alegreya.variable} suppressHydrationWarning>
       <script
         async
         crossOrigin="anonymous"
         src="https://tweakcn.com/live-preview.min.js"
       ></script>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${alegreyaSansSC.variable} ${breeSerif.variable} ${kodeMono.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -30,7 +31,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
+          <Grid>
           {children}
+          </Grid>
         </ThemeProvider>
       </body>
     </html>

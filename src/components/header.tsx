@@ -1,6 +1,14 @@
-"use client"
+"use client";
 
-import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink, NavigationMenuTrigger, navigationMenuTriggerStyle, NavigationMenuContent } from "@/components/ui/navigation-menu";
+import { 
+    NavigationMenu, 
+    NavigationMenuList, 
+    NavigationMenuItem, 
+    NavigationMenuLink, 
+    NavigationMenuTrigger,
+    navigationMenuTriggerStyle,
+    NavigationMenuContent 
+} from "@/components/ui/navigation-menu";
 import { ModeToggle } from "@/components/theme-provider";
 import Link from "next/link"
 
@@ -9,7 +17,7 @@ import Image from "next/image"
 export function Navigation() {
     return (<>
         <NavigationMenu>
-            <NavigationMenuList>
+            <NavigationMenuList className={"xl:flex xl:flex-row xl:gap-2"}>
                 <NavigationMenuItem>
                     <NavigationMenuLink 
                         render={<Link href="/" />}
@@ -27,6 +35,11 @@ export function Navigation() {
                         <NavigationMenuLink render={<Link href="/mastadon" />}>Mastadon</NavigationMenuLink>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
+                <NavigationMenuItem>
+                    <NavigationMenuLink render={<Link href="/contact" />} className={navigationMenuTriggerStyle()}>
+                        Contact
+                    </NavigationMenuLink>
+                </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>
     </>);
@@ -35,7 +48,9 @@ export function Navigation() {
 export function Header() {
     return(<>
         <div className="w-full flex flex-row bg-primary/30 justify-around items-center">
-            <Image src="/favicon.svg" alt="Logo" width={"50"} height={"50"} className="bg-indigo-300/40 rounded-lg inline px-1" />
+            <Link href="/">
+            <Image src="/favicon.svg" alt="Logo" width={60} height={60} className="bg-indigo-300/40 rounded-lg inline px-[10px]" />
+            </Link>
             <Navigation />
             <ModeToggle />
         </div>
