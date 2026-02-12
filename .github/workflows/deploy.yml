@@ -27,11 +27,7 @@ jobs:
       
       - name: Build Artifacts
         env:
-<<<<<<< HEAD
-          PUBLIC_CONVEX_URL: ${{ vars.PUBLIC_CONVEX_URL}}
-=======
           PUBLIC_CONVEX_URL: ${{ vars.PUBLIC_CONVEX_URL }}
->>>>>>> main
         run: pnpm build
       
       - name: copy 404.html to not_found.html
