@@ -27,7 +27,11 @@ jobs:
       
       - name: Build Artifacts
         env:
+<<<<<<< HEAD
           PUBLIC_CONVEX_URL: ${{ vars.PUBLIC_CONVEX_URL}}
+=======
+          PUBLIC_CONVEX_URL: ${{ vars.PUBLIC_CONVEX_URL }}
+>>>>>>> main
         run: pnpm build
       
       - name: copy 404.html to not_found.html
@@ -42,4 +46,4 @@ jobs:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-domain: 'bravegrumpy.nekoweb.org'
           nekoweb-username: 'bravegrumpy'
-          directory: 'dist'
+          directory: 'build'
