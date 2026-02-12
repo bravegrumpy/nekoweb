@@ -1,6 +1,14 @@
-"use client"
+"use client";
 
-import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink, NavigationMenuTrigger, navigationMenuTriggerStyle, NavigationMenuContent } from "@/components/ui/navigation-menu";
+import { 
+    NavigationMenu, 
+    NavigationMenuList, 
+    NavigationMenuItem, 
+    NavigationMenuLink, 
+    NavigationMenuTrigger,
+    navigationMenuTriggerStyle,
+    NavigationMenuContent 
+} from "@/components/ui/navigation-menu";
 import { ModeToggle } from "@/components/theme-provider";
 import Link from "next/link"
 
@@ -9,7 +17,7 @@ import Image from "next/image"
 export function Navigation() {
     return (<>
         <NavigationMenu>
-            <NavigationMenuList>
+            <NavigationMenuList className={"xl:flex xl:flex-row xl:gap-2"}>
                 <NavigationMenuItem>
                     <NavigationMenuLink 
                         render={<Link href="/" />}

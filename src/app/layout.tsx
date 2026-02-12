@@ -2,7 +2,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header"
 
 import type { Metadata } from "next";
-import { geist, geistSans, geistMono } from "@/lib/fonts";
+import { alegreya, alegreyaSansSC, geistSans, geistMono } from "@/lib/fonts";
 import "@/lib/styles/globals.css"
 
 export const metadata: Metadata = {
@@ -16,13 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={geist.variable} suppressHydrationWarning>
+    <html lang="en" className={alegreya.variable} suppressHydrationWarning>
       <script
         async
         crossOrigin="anonymous"
         src="https://tweakcn.com/live-preview.min.js"
       ></script>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${alegreyaSansSC.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

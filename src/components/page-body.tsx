@@ -1,7 +1,7 @@
 "use client"
 import * as React from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, CardAction } from "@/components/ui/card";
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 
 interface GridProps {
