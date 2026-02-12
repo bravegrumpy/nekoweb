@@ -29,6 +29,12 @@ jobs:
         env:
           PUBLIC_CONVEX_URL: ${{ vars.PUBLIC_CONVEX_URL }}
         run: pnpm build
+      
+      - name: copy 404.html to not_found.html
+        run: cp ./dist/404.html ./dist/not_found.html
+
+      - name: Removing 404, only keeping not_found
+        run: rm -rf ./dist/404.html
 
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@main
@@ -36,4 +42,4 @@ jobs:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-domain: 'bravegrumpy.nekoweb.org'
           nekoweb-username: 'bravegrumpy'
-          directory: 'build'
+          directory: 'dist'
