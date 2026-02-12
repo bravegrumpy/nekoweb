@@ -2,8 +2,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header"
 
 import type { Metadata } from "next";
-import { alegreya, alegreyaSansSC, geistSans, geistMono } from "@/lib/fonts";
+import { alegreya, alegreyaSansSC, breeSerif, kodeMono } from "@/lib/fonts";
 import "@/lib/styles/globals.css"
+import { Grid } from "@/components/page-body";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +23,7 @@ export default function RootLayout({
         crossOrigin="anonymous"
         src="https://tweakcn.com/live-preview.min.js"
       ></script>
-      <body className={`${alegreyaSansSC.variable}`}>
+      <body className={`${alegreyaSansSC.variable} ${breeSerif.variable} ${kodeMono.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -30,7 +31,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
+          <Grid>
           {children}
+          </Grid>
         </ThemeProvider>
       </body>
     </html>

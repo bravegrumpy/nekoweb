@@ -3,7 +3,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 export default async function NotFound() {
     return (<>
-            <Card className="w-fit mx-auto mt-[20vh]">
+            <div className="xl:col-span-full h-50"><p></p></div>
+            <Card className="w-fit mx-auto lg:col-span-1 xl:col-span-1 xl:col-start-3">
                 <CardHeader>
                     <CardTitle>
                         <h2 className="text-center text-2xl">Page not found</h2>

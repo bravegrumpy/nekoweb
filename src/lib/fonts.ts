@@ -1,16 +1,5 @@
-import { Geist, Geist_Mono, Alegreya_Sans_SC, Bree_Serif, Kode_Mono } from "next/font/google";
+import { Alegreya_Sans_SC, Bree_Serif, Kode_Mono } from "next/font/google";
 
-export const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-export const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-// export const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 export const alegreya = Alegreya_Sans_SC({
   subsets: ["latin"],
   variable: "--font-sans",

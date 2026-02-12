@@ -1,10 +1,9 @@
-import { Grid, Content } from "@/components/page-body"
+import { Content } from "@/components/page-body"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import Link from "next/link";
 
 export default function Page() {
     return (<>
-            <Grid>
                 <Content />
                 <div>
                     <h3 className="text-2xl font-serif bg-accent text-accent-foreground">FAQs</h3>
@@ -32,6 +31,5 @@ export default function Page() {
                         </AccordionItem>
                     </Accordion>
                 </div>
-            </Grid>
     </>);
 }
