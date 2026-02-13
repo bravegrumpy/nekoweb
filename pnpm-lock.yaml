@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@base-ui/react':
         specifier: ^1.1.0
-        version: 1.1.0(@types/react@19.2.14)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 1.2.0(@types/react@19.2.14)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@phosphor-icons/react':
         specifier: ^2.1.10
         version: 2.1.10(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
@@ -29,6 +29,9 @@ importers:
       next-themes:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      opencode-ai:
+        specifier: ^1.1.61
+        version: 1.1.61
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
@@ -216,8 +219,8 @@ packages:
     resolution: {integrity: sha512-LwdZHpScM4Qz8Xw2iKSzS+cfglZzJGvofQICy7W7v4caru4EaAmyUuO6BGrbyQ2mYV11W0U8j5mBhd14dd3B0A==}
     engines: {node: '>=6.9.0'}
 
-  '@base-ui/react@1.1.0':
-    resolution: {integrity: sha512-ikcJRNj1mOiF2HZ5jQHrXoVoHcNHdBU5ejJljcBl+VTLoYXR6FidjTN86GjO6hyshi6TZFuNvv0dEOgaOFv6Lw==}
+  '@base-ui/react@1.2.0':
+    resolution: {integrity: sha512-O6aEQHcm+QyGTFY28xuwRD3SEJGZOBDpyjN2WvpfWYFVhg+3zfXPysAILqtM0C1kWC82MccOE/v1j+GHXE4qIw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@types/react': ^17 || ^18 || ^19
@@ -227,8 +230,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@base-ui/utils@0.2.4':
-    resolution: {integrity: sha512-smZwpMhjO29v+jrZusBSc5T+IJ3vBb9cjIiBjtKcvWmRj9Z4DWGVR3efr1eHR56/bqY5a4qyY9ElkOY5ljo3ng==}
+  '@base-ui/utils@0.2.5':
+    resolution: {integrity: sha512-oYC7w0gp76RI5MxprlGLV0wze0SErZaRl3AAkeP3OnNB/UBMb6RqNf6ZSIlxOc9Qp68Ab3C2VOcJQyRs7Xc7Vw==}
     peerDependencies:
       '@types/react': ^17 || ^18 || ^19
       react: ^17 || ^18 || ^19
@@ -2359,6 +2362,65 @@ packages:
     resolution: {integrity: sha512-smsWv2LzFjP03xmvFoJ331ss6h+jixfA4UUV/Bsiyuu4YJPfN+FIQGOIiv4w9/+MoHkfkJ22UIaQWRVFRfH6Vw==}
     engines: {node: '>=20'}
 
+  opencode-ai@1.1.61:
+    resolution: {integrity: sha512-GWdplWVPhZ3yEqFAl9CJbLEG9MdsxL/7Ir6H5tVrCd1QAQCwDRFkMzerN0cp1IQxZOb914rUHGwN/8oPbmfLRw==}
+    hasBin: true
+
+  opencode-darwin-arm64@1.1.61:
+    resolution: {integrity: sha512-aee0VDTTa4k5rPUgQZyYKbkWUb9ETFBI5oV6u3m8UYs++VYUrHQFb5/OaurGSkWkUS6m9YmzNHh9u2mD7h2Cuw==}
+    cpu: [arm64]
+    os: [darwin]
+
+  opencode-darwin-x64-baseline@1.1.61:
+    resolution: {integrity: sha512-WgJJo88FZU2p0/nXiRdrLhdPZx7TMoBIJndwTXP/YqoLEgPssqJP67kCDFXy9KbESIttlukbhte1rHp29RDhRw==}
+    cpu: [x64]
+    os: [darwin]
+
+  opencode-darwin-x64@1.1.61:
+    resolution: {integrity: sha512-k0LZu3RVoZrTMEvKaPG+12Sr/jGlBHtKfoLPsZvbBPOifKIu5FBfXX01GbZmNQaXBdwv8GjzrMpEv8zWWiIMeg==}
+    cpu: [x64]
+    os: [darwin]
+
+  opencode-linux-arm64-musl@1.1.61:
+    resolution: {integrity: sha512-jK26Grm+R1IBPICIGwtKkz7qF7lULyngVIZmvapEHBtAYnSdAdlqvkxb0CMLdnvEbnNy4ifDO/1AMVJL3gGy2g==}
+    cpu: [arm64]
+    os: [linux]
+
+  opencode-linux-arm64@1.1.61:
+    resolution: {integrity: sha512-OYml6U5I7cA64XrX3fb5OTHqk/MNX7bbNGtW7U5XalwFKQGKJff0LjditsRcE0HUkolLYKfkBdqHYSuOL8iI3Q==}
+    cpu: [arm64]
+    os: [linux]
+
+  opencode-linux-x64-baseline-musl@1.1.61:
+    resolution: {integrity: sha512-/HPFNGK7cEk/K+BKxUnpDbtlQosW2GxiXLVYJjNgvBY1jZJ1w1A1HtR0FSlvIEeYb2N9BgTgnnjePl9pAo/JKA==}
+    cpu: [x64]
+    os: [linux]
+
+  opencode-linux-x64-baseline@1.1.61:
+    resolution: {integrity: sha512-dABxjsEVGUyiQXDH8bKgH6Lva35S56D71pSrsugfd0596GG3+HxU7RAKkTI056BbgY6tfXNVOtl/C2ac+LHyiA==}
+    cpu: [x64]
+    os: [linux]
+
+  opencode-linux-x64-musl@1.1.61:
+    resolution: {integrity: sha512-38AXsOo7eBAQBvo3Jl2sWS6pgFzkOjFMFZc43xMzc1CmtmffoEimbpTpBhjbY6PMik0Zs+T0SYHiUaMNCtYq9A==}
+    cpu: [x64]
+    os: [linux]
+
+  opencode-linux-x64@1.1.61:
+    resolution: {integrity: sha512-wKDZsQu2xoJ7JeoMf8mxeBG979i0BnuvGWh5L22CKVbneEwjMhJ0NrkTXbn0duEgh79e0BmGnsFrQXuh+YUuZg==}
+    cpu: [x64]
+    os: [linux]
+
+  opencode-windows-x64-baseline@1.1.61:
+    resolution: {integrity: sha512-ah6+LQ/aWL6qRM/l13MsojWr2/mlhgQOT4SMUDT7R7cxLTwUzIYtJ3pt0dj/SW6nKRQzb55/GCSyHJBsx6q3DA==}
+    cpu: [x64]
+    os: [win32]
+
+  opencode-windows-x64@1.1.61:
+    resolution: {integrity: sha512-vP7mn+BVvXkSAJcKVIl1bpl2In1CgdVOqaoRCv4Svl6bDsDc5abwNqjbGj4SfdG1togxj/XA/oyFNhiMAR5oAw==}
+    cpu: [x64]
+    os: [win32]
+
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
     engines: {node: '>= 0.8.0'}
@@ -3220,21 +3282,20 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@base-ui/react@1.1.0(@types/react@19.2.14)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@base-ui/react@1.2.0(@types/react@19.2.14)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
       '@babel/runtime': 7.28.6
-      '@base-ui/utils': 0.2.4(@types/react@19.2.14)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@base-ui/utils': 0.2.5(@types/react@19.2.14)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@floating-ui/react-dom': 2.1.7(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@floating-ui/utils': 0.2.10
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
-      reselect: 5.1.1
       tabbable: 6.4.0
       use-sync-external-store: 1.6.0(react@19.2.3)
     optionalDependencies:
       '@types/react': 19.2.14
 
-  '@base-ui/utils@0.2.4(@types/react@19.2.14)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@base-ui/utils@0.2.5(@types/react@19.2.14)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@floating-ui/utils': 0.2.10
@@ -5383,6 +5444,53 @@ snapshots:
       is-inside-container: 1.0.0
       powershell-utils: 0.1.0
       wsl-utils: 0.3.1
+
+  opencode-ai@1.1.61:
+    optionalDependencies:
+      opencode-darwin-arm64: 1.1.61
+      opencode-darwin-x64: 1.1.61
+      opencode-darwin-x64-baseline: 1.1.61
+      opencode-linux-arm64: 1.1.61
+      opencode-linux-arm64-musl: 1.1.61
+      opencode-linux-x64: 1.1.61
+      opencode-linux-x64-baseline: 1.1.61
+      opencode-linux-x64-baseline-musl: 1.1.61
+      opencode-linux-x64-musl: 1.1.61
+      opencode-windows-x64: 1.1.61
+      opencode-windows-x64-baseline: 1.1.61
+
+  opencode-darwin-arm64@1.1.61:
+    optional: true
+
+  opencode-darwin-x64-baseline@1.1.61:
+    optional: true
+
+  opencode-darwin-x64@1.1.61:
+    optional: true
+
+  opencode-linux-arm64-musl@1.1.61:
+    optional: true
+
+  opencode-linux-arm64@1.1.61:
+    optional: true
+
+  opencode-linux-x64-baseline-musl@1.1.61:
+    optional: true
+
+  opencode-linux-x64-baseline@1.1.61:
+    optional: true
+
+  opencode-linux-x64-musl@1.1.61:
+    optional: true
+
+  opencode-linux-x64@1.1.61:
+    optional: true
+
+  opencode-windows-x64-baseline@1.1.61:
+    optional: true
+
+  opencode-windows-x64@1.1.61:
+    optional: true
 
   optionator@0.9.4:
     dependencies:

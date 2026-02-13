@@ -1,10 +1,25 @@
-import { Content } from "@/components/page-body"
+import { Content, CustomCard } from "@/components/page-body"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Button } from "@/components/ui/button"
 import Link from "next/link";
 
 export default function Page() {
     return (<>
                 <Content />
+                <CustomCard 
+                    title={<h2 className="text-xl">Project Stack</h2>}
+                    description={<p>Technologies used in this project</p>}
+                    content={<>
+                        <ul className="list-disc list-inside space-y-1">
+                            <li><strong>Next.js 16</strong> - React framework with App Router</li>
+                            <li><strong>TypeScript</strong> - Type-safe JavaScript</li>
+                            <li><strong>Tailwind CSS</strong> - Utility-first styling</li>
+                            <li><strong>shadcn/ui</strong> - Component library</li>
+                            <li><strong>React 19</strong> - Latest React with hooks</li>
+                        </ul>
+                    </>}
+                    action={<Button>View on GitHub</Button>}
+                />
                 <div>
                     <h3 className="text-2xl font-serif bg-accent text-accent-foreground">FAQs</h3>
                     <Accordion defaultValue={["item-1"]}>
