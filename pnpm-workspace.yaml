@@ -1,5 +1,4 @@
 onlyBuiltDependencies:
   - msw
-  - opencode-ai
   - sharp
   - unrs-resolver

@@ -9,6 +9,7 @@ import {
     navigationMenuTriggerStyle,
     NavigationMenuContent 
 } from "@/components/ui/navigation-menu";
+
 import { ModeToggle } from "@/components/theme-provider";
 import Link from "next/link"
 
@@ -47,9 +48,9 @@ export function Navigation() {
 
 export function Header() {
     return(<>
-        <div className="w-full flex flex-row bg-primary/30 justify-around items-center">
+        <div className="flex flex-row justify-around items-center bg-primary/30 w-full">
             <Link href="/">
-            <Image src="/favicon.svg" alt="Logo" width={60} height={60} className="bg-indigo-300/40 rounded-lg inline px-[10px]" />
+            <Image src="/favicon.svg" alt="Logo" width={60} height={60} className="inline bg-indigo-300/40 px-[10px] rounded-lg" />
             </Link>
             <Navigation />
             <ModeToggle />
