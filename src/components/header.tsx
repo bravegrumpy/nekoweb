@@ -50,7 +50,7 @@ export function Header() {
     return(<>
         <div className="flex flex-row justify-around items-center bg-primary/30 w-full">
             <Link href="/">
-            <Image src="/favicon.svg" alt="Logo" width={60} height={60} className="inline bg-indigo-300/40 px-[10px] rounded-lg" />
+            <Image src="/favicon.svg" alt="Logo" width={60} height={60} className="inline bg-indigo-300/40 px-2.5 rounded-lg" />
             </Link>
             <Navigation />
             <ModeToggle />

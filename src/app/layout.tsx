@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={alegreya.variable} suppressHydrationWarning>
+    <html lang="en-us" className={alegreya.variable} suppressHydrationWarning>
       <script
         async
         crossOrigin="anonymous"
