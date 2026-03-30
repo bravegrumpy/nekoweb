@@ -33,7 +33,7 @@ export function Navigation() {
                         <NavigationMenuLink
                             render={<Link href="/blog" />}
                         >Blog</NavigationMenuLink>
-                        <NavigationMenuLink render={<Link href="/mastadon" />}>Mastadon</NavigationMenuLink>
+                        <NavigationMenuLink render={<Link href="/mastodon" />}>Mastodon</NavigationMenuLink>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
