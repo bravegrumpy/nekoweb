@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-          node-version: [22]
+          node-version: [24]
     name: deploy2nekoweb
     steps:
       - name: Checkout
@@ -28,6 +28,7 @@ jobs:
       - name: Build Artifacts
         env:
           PUBLIC_CONVEX_URL: ${{ vars.PUBLIC_CONVEX_URL }}
+          NEXT_TELEMETRY_DISABLED: ${{ vars.NEXT_TELEMETRY_DISABLED }}
         run: pnpm build
       
       - name: copy 404.html to not_found.html
