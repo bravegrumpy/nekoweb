@@ -3,22 +3,27 @@
 
 import { Input } from "@/components/ui/input";
 
-import { usePathname } from "next/navigation";
-import { ChangeEvent, useState } from "react";
+import { type ChangeEvent, useState, useEffect } from "react";
 import Link from "next/link";
 
-
 export function CurrentPath() {
-    const pathName = usePathname();
-    const path = decodeURI(pathName);
+    const [pathName, setPathName] = useState<string>("/");
+
+    let path;
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setPathName(window.location.pathname);
+        }
+    }, []);
+    path = pathName ? decodeURI(pathName) : null;
     const [newPath, setNewPath ] = useState<string>("/");
 
     function handleChange(e: ChangeEvent<HTMLInputElement>) {
         setNewPath(e.target.value)
     }
     return (<>
-        {/*<p>The page {path ?? "The page you are looking for" } does not exist.</p>*/}
-        <p>The page you are looking for does not exist.</p>
+        <p>The page {path ?? "you are looking for" } does not exist.</p>
         <div className="flex flex-col gap-3 my-1 ring p-1">
             <p>Would you like to try a different page?</p>
             <div className="flex flex-row gap-10 justify-between">
