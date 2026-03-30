@@ -16,9 +16,10 @@ export default async function NotFound() {
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <CurrentPath />
+                    <CurrentPath>
+                        <p>Check the URL and try again</p>
+                    </CurrentPath>
                     {/* <p>The page you are looking for does not exist.</p> */}
-                    <p>Check the URL and try again</p>
             </CardContent>
             <CardFooter>
                 <Link href={"/"} className="bg-primary text-lg py-1 text-primary-foreground px-5 w-fit mx-auto rounded-lg">Go Home</Link>
