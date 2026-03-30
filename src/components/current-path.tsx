@@ -4,15 +4,16 @@
 import { Input } from "@/components/ui/input";
 
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import Link from "next/link";
+
 
 export function CurrentPath() {
     const pathName = usePathname();
     const path = decodeURI(pathName);
     const [newPath, setNewPath ] = useState<string>("/");
 
-    function handleChange(e) {
+    function handleChange(e: ChangeEvent<HTMLInputElement>) {
         setNewPath(e.target.value)
     }
     return (<>
