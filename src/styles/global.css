@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "basecoat-css";
+/* @import "./theme.css"; */
+/* @import "./default-theme.css"; */
+/* @import "./ocean.css"; */
+/* @import "./bravegrumpy.css" */
+@import "./green.css";
+
+@plugin "@iconify/tailwind4";
+
+@theme {
+    --breakpoint-3xl: 144rem;
+    --breakpoint-4xl: 156rem;
+}

@@ -1,0 +1,15 @@
+<!-- <button type="button" onclick="document.getElementById('alert-dialog').showModal()" class="btn-outline">Open Warning</button> -->
+
+<dialog id="alert-dialog" class="dialog" aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description" open>
+  <div class="bg-secondary text-secondary-foreground">
+    <header>
+      <h2 id="alert-dialog-title">Work in Progress</h2>
+      <p id="alert-dialog-description" class="text-secondary-foreground">By staying on this website, you are agreeing to parooze an unfinished piece of artwork. Please do so at your own discretion.</p>
+    </header>
+
+    <footer>
+      <button class="btn-outline" onclick="window.location.href = 'https://www.google.com'">Cancel</button>
+      <button class="btn-primary" onclick="document.getElementById('alert-dialog').close()">Continue</button>
+    </footer>
+  </div>
+</dialog>
