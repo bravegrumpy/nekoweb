@@ -31,6 +31,21 @@ export default defineConfig({
       provider: fontProviders.fontsource(),
       name: "Kode Mono",
       cssVariable: "--font-kode-mono"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Capriola",
+      cssVariable: "--font-capriola"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "BioRhyme",
+      cssVariable: "--font-bio-rhyme"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Martian Mono",
+      cssVariable: "--font-martian-mono"
     }
   ],
 

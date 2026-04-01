@@ -31,9 +31,9 @@
   --sidebar-accent-foreground: oklch(0.2046 0 0);
   --sidebar-border: oklch(0.9219 0 0);
   --sidebar-ring: oklch(0.7090 0 0);
-  --font-sans: Capriola, ui-sans-serif, sans-serif, system-ui;
-  --font-serif: BioRhyme, ui-serif, serif;
-  --font-mono: Martian Mono, ui-monospace, monospace;
+  --font-sans: var(--font-capriola), Capriola, ui-sans-serif, sans-serif, system-ui;
+  --font-serif: var(--font-bio-rhyme), BioRhyme, ui-serif, serif;
+  --font-mono: var(--font-martian-mono),  Martian Mono, ui-monospace, monospace;
   --radius: 0.625rem;
   --shadow-x: 0;
   --shadow-y: 1px;
@@ -86,9 +86,9 @@
   --sidebar-accent-foreground: oklch(0.9851 0 0);
   --sidebar-border: oklch(1.0000 0 0);
   --sidebar-ring: oklch(0.5555 0 0);
-  --font-sans: Capriola, ui-sans-serif, sans-serif, system-ui;
-  --font-serif: BioRhyme, ui-serif, serif;
-  --font-mono: Martian Mono, ui-monospace, monospace;
+  --font-sans: var(--font-capriola), Capriola, ui-sans-serif, sans-serif, system-ui;
+  --font-serif: var(--font-bio-rhyme), BioRhyme, ui-serif, serif;
+  --font-mono: var(--font-martian-mono),  Martian Mono, ui-monospace, monospace;
   --radius: 0.625rem;
   --shadow-x: 0;
   --shadow-y: 1px;
