@@ -1,10 +1,11 @@
 @import "tailwindcss";
 @import "basecoat-css";
 /* @import "./theme.css"; */
-@import "./default-theme.css";
+/* @import "./default-theme.css"; */
 /* @import "./ocean.css"; */
 /* @import "./bravegrumpy.css" */
 /* @import "./green.css"; */
+@import "./amethyst-haze.css";
 
 @plugin "@iconify/tailwind4";
 

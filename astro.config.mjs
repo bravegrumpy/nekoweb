@@ -19,6 +19,11 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.fontsource(),
+      name: "Coming Soon",
+      cssVariable: "--font-coming-soon",
+    },
+    {
+      provider: fontProviders.fontsource(),
       name: "Alegreya Sans SC",
       cssVariable: "--font-alegrya"
     },

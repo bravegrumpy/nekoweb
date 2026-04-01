@@ -31,7 +31,7 @@
   --sidebar-accent-foreground: oklch(0 0 0);
   --sidebar-border: oklch(0 0 0);
   --sidebar-ring: oklch(0.7505 0.1791 58.2827);
-  --font-sans: Coming Soon, cursive;
+  --font-sans: var(--font-coming-soon), Coming Soon, cursive;
   --font-serif: "Patrick Hand", cursive;
   --font-mono: "Indie Flower", cursive;
   --radius: 0px;
