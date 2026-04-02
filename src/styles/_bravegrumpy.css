@@ -33,7 +33,7 @@
   --sidebar-ring: oklch(0.7090 0 0);
   --font-sans: var(--font-capriola), Capriola, ui-sans-serif, sans-serif, system-ui;
   --font-serif: var(--font-bio-rhyme), BioRhyme, ui-serif, serif;
-  --font-mono: var(--font-martian-mono), Martian Mono, ui-monospace, monospace;
+  --font-mono: var(--font-martian-mono),  Martian Mono, ui-monospace, monospace;
   --radius: 0.625rem;
   --shadow-x: 0;
   --shadow-y: 1px;
@@ -63,7 +63,7 @@
   --primary: oklch(0.9038 0.0636 311.0799);
   --primary-foreground: oklch(0.3083 0.1564 309.3776);
   --secondary: oklch(0.3826 0.0704 178.0110);
-  --secondary-foreground: oklch(0.8940 0.0570 293.2830);
+  --secondary-foreground: oklch(0.4366 0.0823 175.0632);
   --muted: oklch(0.2686 0 0);
   --muted-foreground: oklch(0.7090 0 0);
   --accent: oklch(0.2686 0 0);
@@ -88,7 +88,7 @@
   --sidebar-ring: oklch(0.5555 0 0);
   --font-sans: var(--font-capriola), Capriola, ui-sans-serif, sans-serif, system-ui;
   --font-serif: var(--font-bio-rhyme), BioRhyme, ui-serif, serif;
-  --font-mono: var(--font-martian-mono), Martian Mono, ui-monospace, monospace;
+  --font-mono: var(--font-martian-mono),  Martian Mono, ui-monospace, monospace;
   --radius: 0.625rem;
   --shadow-x: 0;
   --shadow-y: 1px;
@@ -166,12 +166,6 @@
   --tracking-widest: calc(var(--tracking-normal) + 0.1em);
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-    letter-spacing: var(--tracking-normal);
-  }
+body {
+  letter-spacing: var(--tracking-normal);
 }

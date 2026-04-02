@@ -29,6 +29,16 @@ export default defineConfig({
     },
     {
       provider: fontProviders.fontsource(),
+      name: "Patrick Hand",
+      cssVariable: "--font-patrick-hand"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Indie Flower",
+      cssVariable: "--font-indie-flower"
+    },
+    {
+      provider: fontProviders.fontsource(),
       name: "Bree Serif",
       cssVariable: "--font-bree-serif"
     },
@@ -51,6 +61,21 @@ export default defineConfig({
       provider: fontProviders.fontsource(),
       name: "Martian Mono",
       cssVariable: "--font-martian-mono"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Numans",
+      cssVariable: "--font-numans"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Cormorant Upright",
+      cssVariable: "--font-cormorant-upright"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Space Mono",
+      cssVariable: "--font-space-mono"
     }
   ],
 

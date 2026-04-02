@@ -11,9 +11,6 @@
   "dependencies": {
     "@astrojs/react": "^5.0.2",
     "@astrojs/rss": "4.0.18",
-    "@fontsource/coming-soon": "^5.2.8",
-    "@fontsource/indie-flower": "^5.2.7",
-    "@fontsource/patrick-hand": "^5.2.8",
     "@tailwindcss/vite": "^4.1.18",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",

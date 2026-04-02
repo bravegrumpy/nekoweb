@@ -14,15 +14,6 @@ importers:
       '@astrojs/rss':
         specifier: 4.0.18
         version: 4.0.18
-      '@fontsource/coming-soon':
-        specifier: ^5.2.8
-        version: 5.2.8
-      '@fontsource/indie-flower':
-        specifier: ^5.2.7
-        version: 5.2.7
-      '@fontsource/patrick-hand':
-        specifier: ^5.2.8
-        version: 5.2.8
       '@tailwindcss/vite':
         specifier: ^4.1.18
         version: 4.2.2(vite@7.3.1(@types/node@25.5.0)(jiti@2.6.1)(lightningcss@1.32.0))
@@ -349,15 +340,6 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
-
-  '@fontsource/coming-soon@5.2.8':
-    resolution: {integrity: sha512-L2+CynMPwGjrwXq0x77IN2SOXpeuLp6wFzmSp1KxY59+hZhspiHLN7MDRKRXS1LccYLhtDk1gO40j1bpdgX1PQ==}
-
-  '@fontsource/indie-flower@5.2.7':
-    resolution: {integrity: sha512-vu9yEMW3Be2TXRkw2NYMLK1C4KQOUme3SUtqSha/wGzvBgzc2llT/lQ3bzZZ4aoCeF4x9ghGV+iwW+4hVr+Yhg==}
-
-  '@fontsource/patrick-hand@5.2.8':
-    resolution: {integrity: sha512-FZx34VLuiF+Pjv/A/m1bTxjR6hAvmL6vdCp62uypVdgFvSrPrBOxX+vCXVy8lfNVFqvKfm/ghun+aaYVYqfBEg==}
 
   '@iconify/json@2.2.456':
     resolution: {integrity: sha512-u2215knwHqSTgvRwkwziitJr5Js25KukLhW8C58fUGyNsD6P5EWoOb5nA0o8K8tzqUBi/622XTdf7wN2hmK+NA==}
@@ -2222,12 +2204,6 @@ snapshots:
 
   '@esbuild/win32-x64@0.27.4':
     optional: true
-
-  '@fontsource/coming-soon@5.2.8': {}
-
-  '@fontsource/indie-flower@5.2.7': {}
-
-  '@fontsource/patrick-hand@5.2.8': {}
 
   '@iconify/json@2.2.456':
     dependencies:

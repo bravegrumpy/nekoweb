@@ -32,8 +32,8 @@
   --sidebar-border: oklch(0 0 0);
   --sidebar-ring: oklch(0.7505 0.1791 58.2827);
   --font-sans: var(--font-coming-soon), Coming Soon, cursive;
-  --font-serif: "Patrick Hand", cursive;
-  --font-mono: "Indie Flower", cursive;
+  --font-serif: var(--font-patrick-hand), "Patrick Hand", cursive;
+  --font-mono: var(--font-indie-flower), "Indie Flower", cursive;
   --radius: 0px;
   --shadow-x: 4px;
   --shadow-y: 4px;
@@ -86,9 +86,9 @@
   --sidebar-accent-foreground: oklch(0 0 0);
   --sidebar-border: oklch(0.9884 0.0604 107.4563);
   --sidebar-ring: oklch(0.7927 0.1710 70.6699);
-  --font-sans: Coming Soon, cursive;
-  --font-serif: "Patrick Hand", cursive;
-  --font-mono: "Indie Flower", cursive;
+  --font-sans: var(--font-coming-soon), Coming Soon, cursive;
+  --font-serif: var(--font-patrick-hand), "Patrick Hand", cursive;
+  --font-mono: var(--font-indie-flower), "Indie Flower", cursive;
   --radius: 0px;
   --shadow-x: 4px;
   --shadow-y: 4px;

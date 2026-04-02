@@ -7,6 +7,7 @@ import logo from "@/images/favicon.png"
 export interface link {
     href: string;
     text: string;
+    group: number;
 }
 
 interface Props {
@@ -25,10 +26,11 @@ function active(href:string): string {
 }
 ---
 <nav class="button-group flex lg:flex flex-col lg:flex-row gap-5 m-5 w-full items-center justify-between bg-muted">
-    <a href="/" class="hidden lg:block">
+    <a href="/" class="hidden lg:block" data-tooltip="Go Home" data-side="bottom" data-align="center">
         <Image src={logo} alt="Logo" width={75} height={75} />
     </a>
 
+    {/*
     <div id="mainNav" role="group" class="hidden lg:flex w-full lg:w-fit lg:flex-row gap-1">
     {
         links.map((lnk: link) => {
@@ -38,9 +40,30 @@ function active(href:string): string {
         })
     }
     </div>
-    <div class="flex flex-row gap-2 border-2 p-2 bg-muted">
-        <button type="button" class="hidden lg:block btn-icon" onclick="document.dispatchEvent(new CustomEvent('basecoat:sidebar'))">
-            <span class="iconify-color icon-[streamline-stickies-color--book-library]"></span>
+    */}
+    <div id="condencedNav" role="group" class="hidden lg:flex w-full lg:w-fit lg:flex-row gap-3">
+        <div role="menu" id="content-dropdown" class="dropdown-menu">
+            <button type="button" id="content-dropdown-trigger" aria-haspopup="menu" aria-controls="content-dropdown-menu" aria-expanded="false" class={`${active("/content")}`}>Content</button>
+            <div id="content-dropdown-popover" data-popover aria-hidden="true" 
+            class="min-w-56">
+                <div role="menu" id="content-dropdown-menu" aria-labelledby="content-dropdown-trigger">
+                    {
+                        links.map((lnk: link) => {
+                            if (lnk.group === 1) {
+                                return(
+                                    <a role="menuitem" href={lnk.href} class={`${active(lnk.href)}`}>{lnk.text}</a>
+                                );
+                            }
+                        })
+                    }
+                </div>
+            </div>
+        </div>
+        <a href="/about" class={`${active("/about")}`}>About</a>
+    </div>
+    <div class="flex flex-row gap-2 border-2 p-2 bg-muted justify-around items-center">
+        <button type="button" class="hidden lg:block btn-icon size-8" onclick="document.dispatchEvent(new CustomEvent('basecoat:sidebar'))">
+            <span class="iconify-color icon-[streamline-stickies-color--book-library] size-6 align-middle"></span>
         </button>
         <ThemeToggle />
         <button type="button" class="btn lg:hidden" id="menuBtn" onclick="menuToggle()">
