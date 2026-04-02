@@ -9,20 +9,25 @@
         <script src="https://cdn.jsdelivr.net/npm/basecoat-css@0.3.11/dist/js/all.min.js" defer></script>
 
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./stylesheets/styles.css">
     </head>
     <body>
+        <main class="w-full h-screen">
         <h1 class="text-2xl font-serif">Home</h1>
-        <button class="btn" onclick="openDialog()">Open Dialog</button>
-        <dialog open>
-            <header>
-                <h2>Test</h2>
+        <button class="btn mt-[45vh] w-fit mx-[45vw]" onclick="openDialog()">Open Dialog</button>
+        <!--# include file="./_includes/theme-toggle.html"-->
+        <dialog open class="dialog" id="wip-warning-dialog" aria-labelledby="wip-warning-dialog-title" aria-describedby="wip-warning-dialog-description" onclick="if (event.target === this) this.close()">
+            <div>
+            <header class="flex flex-row gap-5 w-full justify-around items-center">
+                <h2 id="wip-warning-dialog-title">Test</h2>
                 <button onclick="closeDialog()">❌</button>
             </header>
             <section>
                 <p>By staying on this website, you are agreeing to peruse an unfinished piece of artwork. Please do so at your own discretion.</p>
             </section>
+            </div>
         </dialog>
-        <script src="./script.js"></script>
+    </main>
+        <script src="./scripts/main.js"></script>
     </body>
 </html>
