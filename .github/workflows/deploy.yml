@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-          node-version: [20, 22, 24]
+          node-version: [24]
     name: deploy2nekoweb
     steps:
       - name: Checkout
