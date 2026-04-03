@@ -11,6 +11,32 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with: 
+          version: 10
+      
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with: 
+          node-version: ${{ matrix.node-version }}
+          cache: pnpm
+      
+      - name: Install Dependancies
+        run: pnpm install
+      
+      - name: Build Artifacts
+        env:
+          PUBLIC_CONVEX_URL: ${{ vars.PUBLIC_CONVEX_URL }}
+          NEXT_TELEMETRY_DISABLED: ${{ vars.NEXT_TELEMETRY_DISABLED }}
+        run: pnpm build
+      
+      - name: copy 404.html to not_found.html
+        run: cp ./dist/404.html ./dist/not_found.html
+
+      - name: Removing 404, only keeping not_found
+        run: rm -rf ./dist/404.html
+
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@main
         with: 
