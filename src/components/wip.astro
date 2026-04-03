@@ -1,0 +1,33 @@
+<dialog open>
+    <div>
+        <header>
+            <h3>Work In Progress</h3>
+        </header>
+        <section>
+            <p>By staying on this website, you are agreeing to peruse an unfinished piece of artwork. Please do so at your own discretion.</p>
+        </section>
+        <footer>
+            <button onclick="closeDialog()">Dismiss</button>
+        </footer>
+    </div>
+</dialog>
+
+<button style="display: none" id="show" onclick="showDialog()">Show Dialog</button>
+
+<script is:inline>
+    function closeDialog() {
+        const dialog = document.querySelector("dialog")
+        dialog.open = false;
+
+        const btn = document.querySelector("button#show");
+        btn.style.display = "inline";
+    }
+
+    function showDialog() {
+        const dialog = document.querySelector("dialog");
+        dialog.open = true;
+
+        const btn = document.querySelector("button#show");
+        btn.style.display = "none";
+    }
+</script>
