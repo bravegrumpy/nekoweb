@@ -1,18 +1,18 @@
-<dialog open>
+<dialog id="wip-dialog" class="dialog" aria-labelledby="wip-dialog-title" open>
     <div>
         <header>
-            <h3>Work In Progress</h3>
+            <h3 id="wip-dialog-title">Work In Progress</h3>
         </header>
         <section>
             <p>By staying on this website, you are agreeing to peruse an unfinished piece of artwork. Please do so at your own discretion.</p>
         </section>
         <footer>
-            <button onclick="closeDialog()">Dismiss</button>
+            <button class="btn" onclick="closeDialog()">Dismiss</button>
         </footer>
     </div>
 </dialog>
 
-<button style="display: none" id="show" onclick="showDialog()">Show Dialog</button>
+<button style="display: none" class="btn" id="show" onclick="showDialog()">Show Dialog</button>
 
 <script is:inline>
     function closeDialog() {

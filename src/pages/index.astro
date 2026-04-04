@@ -1,21 +1,19 @@
 ---
-import { Content as Rationale } from "./rationale.md";
-import WIP from "@/components/wip.astro";
+import Layout from "@/layouts/Base.astro";
+import { Content as Rationale } from "./posts/rationale.md";
+import { Content as Stack } from "./posts/using.md"
+import "@/styles/global.css"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
+<Layout pageTitle="Home">
+	<div class="card text-center flex flex-col gap-5 bg-accent/50">
 		<h1>BRAVE GRUMPY</h1>
 		<h2>WELCOME</h2>
-		<WIP />
+	</div>
+	<div class="card">
 		<Rationale />
-	</body>
-</html>
+	</div>
+	<div class="card">
+		<Stack />
+	</div>
+</Layout>

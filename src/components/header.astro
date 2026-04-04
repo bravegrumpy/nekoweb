@@ -1,0 +1,21 @@
+---
+import Navigation from "@/components/navigation.astro"
+import { Image } from "astro:assets"
+import ThemeChanger from "@/components/theme-changer.astro"
+import WIP from "@/components/wip.astro"
+---
+<header class="-mx-5 bg-secondary/50 flex flex-row justify-between px-15 h-15 col-start-1 col-end-6 items-center">
+    <div class="flex flex-row gap-15 justify-center items-center">
+    <a data-tooltip="Go Home" data-side="bottom" href="/">
+        <Image src="/favicon.svg" width={50} height={50} alt="logo"/>
+    </a>
+        <slot />
+    </div>
+    <div class="w-fit flex flex-row justify-between items-center gap-10">
+        <Navigation />
+    </div>
+    <div class="w-50 rounded-lg shadow border-2 p-3 flex flex-row justify-center items-center gap-5">
+        <ThemeChanger />
+        <WIP />
+    </div>
+</header>

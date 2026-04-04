@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "basecoat-css";
+@import "./theme.css";
+
+
+@utility masonry {
+    display: grid-lanes;
+}
+
+@-webkit-document url-prefix() {}
+
+@-moz-document url-prefix() {
+    .masonry {
+        display: grid;
+        grid-template-rows: masonry;
+    }
+}
