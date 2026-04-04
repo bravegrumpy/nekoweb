@@ -57,6 +57,41 @@ export default defineConfig({
       provider: fontProviders.fontsource(),
       name: "IBM Plex Mono",
       cssVariable: "--font-ibm-plex-mono"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Montserrat",
+      cssVariable: "--font-montserrat"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Merriweather",
+      cssVariable: "--font-merriweather"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Ubuntu Mono",
+      cssVariable: "--font-ubuntu-mono"
+    },
+    {
+      provider: fontProviders.google(),
+      name: "Charmonman",
+      cssVariable: "--font-charmonman"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Almendra",
+      cssVariable: "--font-almendra"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Almendra",
+      cssVariable: "--font-almendra"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Workbench",
+      cssVariable: "--font-workbench"
     }
   ]
 });

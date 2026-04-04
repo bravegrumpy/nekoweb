@@ -1,0 +1,15 @@
+<button 
+    id="legible-font" 
+    class="btn-outline icon-color size-8 icon-[streamline-stickies-color--pen]" 
+    onclick="toggleFont()"
+    data-tooltip="Toggle Legible Font"
+    data-side="bottom"
+>
+    <span class="sr-only">Legible Font</span>
+</button>
+
+<script is:inline>
+    function toggleFont() {
+        document.documentElement.classList.toggle("font-capriola");
+    }
+</script>

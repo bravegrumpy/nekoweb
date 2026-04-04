@@ -1,0 +1,23 @@
+---
+import Layout from "@/layouts/Base.astro"
+const slug = "/blog";
+const pageTitle = "Blog";
+
+
+const pgs = Object.values(import.meta.glob("@/pages/*.astro", {eager: true}))
+---
+
+<Layout pageTitle={pageTitle} slug={slug}>
+    <div class="card">This is in fact a blog.</div>
+    <div class="card">
+        <ul>
+            {
+                pgs.map((page: any) => {
+                    return (<li>
+                        {JSON.stringify(page)}
+                    </li>);
+                })
+            }
+        </ul>
+    </div>
+</Layout>

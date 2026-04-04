@@ -1,0 +1,56 @@
+---
+const pgs = Object.values(import.meta.glob("@/pages/*.astro", {eager: true}))
+---
+
+<aside class="sidebar" data-side="left" aria-hidden="true">
+    <nav aria-label="Sidebar navigation">
+        <section class="sidebar-header">
+        </section>
+        <section class="scrollbar">
+            <div role="group" aria-labelledby="group-label-content-1">
+                <h3 id="group-label-content-1" class="font-serif text-3xl">Links</h3>
+                <ul>
+                    {
+                        pgs.map((page: any) => {
+                            if ((page.url !== "/404") && (page.url !== "" && (pgs.length > 2))) {
+                                return (<>
+                                    <li><a class="font-serif btn-link" href={page.url}>{page.url}</a></li>
+                                </>);
+                            }
+                        })
+                    }
+                </ul>
+            </div>
+        </section>
+    </nav>
+</aside>
+
+
+<button id="sidebar-trigger" type="button" onclick="document.dispatchEvent(new CustomEvent('basecoat:sidebar'))" class="iconify size-8 icon-[streamline-plump-color--layout-right-sidebar] fixed" style="transition: left 300ms, margin-left 300ms; margin-left: -90px"></button>
+
+<script is:inline>
+    const sidebar = document.querySelector(".sidebar");
+    const trigger = document.querySelector("#sidebar-trigger");
+
+    sidebarWidth = sidebar?.offsetWidth ?? 0;
+    sidebarMarginLeft = sidebar ? -90 : 0;
+
+    function updatePosition() {
+        if (!sidebar || !trigger) return;
+        const isHidden = sidebar.getAttribute("aria-hidden") === "true";
+        trigger.style.left = isHidden ? "0px" : `${sidebarWidth}px`;
+        trigger.style.marginLeft = isHidden ? "0px" : `${sidebarMarginLeft}px`
+    }
+
+    new MutationObserver(updatePosition).observe(sidebar, {
+        attributes: true,
+        attributeFilter: ["aria-hidden"]
+    })
+
+    updatePosition();
+
+    function tst() {
+        alert("clicked")
+    }
+
+</script>

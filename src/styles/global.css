@@ -17,3 +17,21 @@
         grid-template-rows: masonry;
     }
 }
+
+@theme inline {
+    --font-capriola: var(--font-capriola);
+    --font-bio-rhyme: var(--font-bio-rhyme);
+    --font-martian-mono: var(--font-martian-mono);
+    --font-inter: var(--font-inter);
+    --font-source-serif: var(--font-source-serif);
+    --font-jetbrians-mono: var(--font-jetbrians-mono);
+    --font-dm-sans: var(--font-dm-sans);
+    --font-lora: var(--font-lora);
+    --font-ibm-plex-mono: var(--font-ibm-plex-mono);
+    --font-montserrat: var(--font-montserrat);
+    --font-merriweather: var(--font-merriweather);
+    --font-ubuntu-mono: var(--font-ubuntu-mono);
+    --font-charmonman: var(--font-charmonman);
+    --font-almendra: var(--font-almendra);
+    --font-workbench: var(--font-workbench);
+}

@@ -1,0 +1,17 @@
+---
+const { frontmatter } = Astro.props;
+---
+<div class="card text-center flex flex-col gap-5 bg-accent/50">
+    <header>
+        <h1 class="font-bold font-serif text-4xl">
+            <a href={frontmatter.href} target="_blank" class="text-3xl btn-link">{frontmatter.title}</a>
+        </h1>
+        <h2>{frontmatter.subtitle}</h2>
+    </header>
+    <section>
+        <slot />
+    </section>
+    <footer>
+        <a href="/" class="btn-link">Go Back</a>
+    </footer>
+</div>

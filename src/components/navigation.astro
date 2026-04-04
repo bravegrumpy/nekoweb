@@ -1,4 +1,40 @@
-<nav class="bg-secondary/20 w-fit">
-    <a href="/" class="btn">Home</a>
-    <a href="/blog" class="btn">Blog</a>
+---
+export type route = {
+    href: string;
+    text: string;
+}
+
+interface Props {
+    navLinks: route[];
+    slug: string;
+}
+
+const { navLinks, slug } = Astro.props;
+---
+
+<nav class="bg-secondary/20 w-full flex flex-row justify-center items-center">
+    <div id="links" class="w-full hidden md:flex flex-col md:flex-row gap-2">
+        {
+            navLinks.map((link: route) => {
+                return(
+                    <a class={`${link.href === slug ? "btn-secondary" : "btn"}`} href={link.href}>{link.text}</a>
+                );
+            })
+        }
+    </div>
+    <button id="menu" onclick="handleClick()" class="md:hidden iconify-color s-15 icon-[streamline-ultimate-color--navigation-menu-1] size-15 mx-auto mt-10"></button>
 </nav>
+
+
+
+<script is:inline>
+    function handleClick() {
+        const nav = document.querySelector("#links");
+        if (nav) {
+            nav.classList.toggle("flex");
+            nav.classList.toggle("hidden");
+        }
+        const menu = document.querySelector("#menu");
+        menu.classList.add("hidden");
+    }
+</script>

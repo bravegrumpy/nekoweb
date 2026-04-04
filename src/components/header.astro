@@ -1,21 +1,34 @@
 ---
-import Navigation from "@/components/navigation.astro"
+import Navigation, { type route } from "@/components/navigation.astro"
 import { Image } from "astro:assets"
 import ThemeChanger from "@/components/theme-changer.astro"
 import WIP from "@/components/wip.astro"
+import AccessibleFont from "./accessible-font.astro"
+
+interface Props {
+    navLinks: route[],
+    slug: string;
+}
+const { navLinks, slug="/" } = Astro.props;
 ---
-<header class="-mx-5 bg-secondary/50 flex flex-row justify-between px-15 h-15 col-start-1 col-end-6 items-center">
-    <div class="flex flex-row gap-15 justify-center items-center">
+<header class="-mx-5 md:bg-secondary/50 md:flex md:flex-row md:justify-between px-15 h-20 lg:h-15 col-span-full items-center">
+    <div class="hidden lg:flex lg:flex-row lg:gap-15 lg:justify-center lg:items-center">
     <a data-tooltip="Go Home" data-side="bottom" href="/">
         <Image src="/favicon.svg" width={50} height={50} alt="logo"/>
     </a>
         <slot />
     </div>
-    <div class="w-fit flex flex-row justify-between items-center gap-10">
-        <Navigation />
+    <div class="w-full md:w-fit flex flex-row justify-stretch items-stretch gap-10">
+        <Navigation navLinks={navLinks} slug={slug}/>
     </div>
-    <div class="w-50 rounded-lg shadow border-2 p-3 flex flex-row justify-center items-center gap-5">
+    <div class="w-80 hidden rounded-lg shadow border-2 p-3 md:flex md:flex-row justify-center items-center gap-5 bg-radial from-0% to-110% from-accent/20 to-primary/30">
         <ThemeChanger />
         <WIP />
+        <AccessibleFont />
     </div>
 </header>
+
+<div class="md:hidden flex flex-row items-center justify-start w-fit gap-5 bg-radial from-0% via-25% via-chart-2 to-110% from-accent/20 to-primary">
+    <ThemeChanger />
+    <AccessibleFont />
+</div>

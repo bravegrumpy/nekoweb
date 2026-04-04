@@ -1,3 +1,9 @@
+---
+layout: "@/layouts/markdownLayout.astro"
+title: My Reasoning
+embedded: true
+---
+
 This is a very basic, or I guess empty "blog".
 
 I have a bunch of ideas, but this is a placeholder.

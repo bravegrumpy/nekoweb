@@ -1,19 +1,25 @@
 ---
+import "@/styles/global.css"
+
 import Layout from "@/layouts/Base.astro";
 import { Content as Rationale } from "./posts/rationale.md";
-import { Content as Stack } from "./posts/using.md"
-import "@/styles/global.css"
+import { Content as Stack} from "./posts/using.md"
+import { Content as Welcome } from "@/pages/posts/welcome.md"
+
+const posts = Object.values(import.meta.glob("./posts/**/*.md", { eager: true }))
 ---
 
-<Layout pageTitle="Home">
-	<div class="card text-center flex flex-col gap-5 bg-accent/50">
-		<h1><a href="https://bravegrumpy.com" target="_blank" class="btn-link">BRAVE GRUMPY</a></h1>
-		<h2>WELCOME</h2>
+<Layout pageTitle="Home" slug="/">
+	<Welcome embedded={true}/>
+	<div class="2xl:col-span-2">
+		<Rationale embedded={true}/>
 	</div>
-	<div class="card">
-		<Rationale />
-	</div>
-	<div class="card">
-		<Stack />
-	</div>
+	<Stack />
+	{
+		posts.map((post: any) => {
+			return(<>
+				<a href={post.url} class="btn-link">{post.frontmatter.title}</a>
+			</>);
+		})
+	}
 </Layout>
