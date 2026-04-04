@@ -12,7 +12,16 @@
     </div>
 </dialog>
 
-<button style="display: none" class="btn" id="show" onclick="showDialog()">Show Dialog</button>
+<button 
+    style="display: none" 
+    class="btn" 
+    id="show" 
+    onclick="showDialog()"
+    data-side="bottom"
+    data-tooltip="Show the WIP Dialog"
+>
+    Show Dialog
+</button>
 
 <script is:inline>
     function closeDialog() {

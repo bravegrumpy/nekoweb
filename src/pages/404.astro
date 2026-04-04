@@ -1,8 +1,12 @@
 ---
 import Layout from "@/layouts/Base.astro"
+const currPage = Astro.url.pathname;
 ---
 
 <Layout>
-    <p>Page Not Found</p>
-    <a class="btn" href="/">Go Home</a>
+    <div class="card flex flex-col gap-5 justify-between items-center col-start-3">
+        <h2 class="text-2xl font-serif text-primary">Page Not Found</h2>
+        <a class="btn" href="/">Go Home</a>
+        <p>{currPage}</p>
+    </div>
 </Layout>
