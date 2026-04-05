@@ -1,22 +1,41 @@
 ---
 const pgs = Object.values(import.meta.glob("@/pages/*.astro", {eager: true}))
+const posts = Object.values(import.meta.glob("@/pages/posts/**/*.md", { eager: true}))
 ---
 
-<aside class="sidebar" data-side="left" aria-hidden="true">
+<aside class="hidden md:block sidebar" data-side="left" aria-hidden="true">
     <nav aria-label="Sidebar navigation">
         <section class="sidebar-header">
         </section>
         <section class="scrollbar">
             <div role="group" aria-labelledby="group-label-content-1">
-                <h3 id="group-label-content-1" class="font-serif text-3xl">Links</h3>
+                <h3 id="group-label-content-1" class="font-serif text-3xl">Pages</h3>
                 <ul>
                     {
-                        pgs.map((page: any) => {
-                            if ((page.url !== "/404") && (page.url !== "" && (pgs.length > 2))) {
-                                return (<>
-                                    <li><a class="font-serif btn-link" href={page.url}>{page.url}</a></li>
-                                </>);
-                            }
+                        pgs.length > 2 ? (
+                            pgs.map((page: any) => {
+                                if ((page.url !== "/404") && (page.url !== "")) {
+                                    return (
+                                        <li><a class="font-serif btn-link" href={page.url}>{page.url}</a></li>
+                                    )
+                                }
+                            })
+                        ) : (<>
+                            <li>No Links to Display</li>
+                        </>)
+                    }
+                </ul>
+            </div>
+            <div role="group" aria-labelledby="group-label-content-2">
+                <h3 id="group-label-content-2" class="font-serif text-3xl">Blog Posts</h3>
+                <ul>
+                    {
+                        posts.map((post: any) => {
+                            return(
+                                <li>
+                                    <a class="btn-link" href={post.url}>{post.frontmatter.title}</a>
+                                </li>
+                            )
                         })
                     }
                 </ul>
@@ -26,7 +45,7 @@ const pgs = Object.values(import.meta.glob("@/pages/*.astro", {eager: true}))
 </aside>
 
 
-<button id="sidebar-trigger" type="button" onclick="document.dispatchEvent(new CustomEvent('basecoat:sidebar'))" class="iconify size-8 icon-[streamline-plump-color--layout-right-sidebar] fixed" style="transition: left 300ms, margin-left 300ms; margin-left: -90px"></button>
+<button id="sidebar-trigger" type="button" onclick="document.dispatchEvent(new CustomEvent('basecoat:sidebar'))" class="hidden md:inline iconify size-8 icon-[streamline-plump-color--layout-right-sidebar] fixed" style="transition: left 300ms, margin-left 300ms; margin-left: -90px"></button>
 
 <script is:inline>
     const sidebar = document.querySelector(".sidebar");

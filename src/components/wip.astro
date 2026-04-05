@@ -14,19 +14,28 @@
 
 <button 
     style="display: none" 
-    class="btn" 
+    class="btn-icon size-8 iconify-color icon-[streamline-ultimate-color--car-dashboard-warning]" 
     id="show" 
     onclick="showDialog()"
     data-side="bottom"
     data-tooltip="Show the WIP Dialog"
 >
-    Show Dialog
+    <span class="sr-only">
+        Show WIP Warning
+    </span>
 </button>
 
 <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sawDialog = window.sessionStorage.getItem("saw-dialog") ? true : false;
+        if (sawDialog) {
+            closeDialog()
+        }
+    })
     function closeDialog() {
         const dialog = document.querySelector("dialog")
         dialog.open = false;
+        window.sessionStorage.setItem("saw-dialog", true)
 
         const btn = document.querySelector("button#show");
         btn.style.display = "inline";

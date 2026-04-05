@@ -2,10 +2,14 @@
 import "@/styles/global.css"
 import Fonts from "@/components/fonts.astro"
 
+import { type route} from "@/components/navigation.astro";
+
 import Header from "@/components/header.astro"
 import Sidebar from "@/components/sidebar.astro";
 
 import Routes from "@/data/routes.json";
+
+let links = Routes as route[];
 
 const { pageTitle, slug } = Astro.props;
 ---
@@ -25,7 +29,7 @@ const { pageTitle, slug } = Astro.props;
 	</head>
 	<body>
         <main class="masonry grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-10 px-5">
-            <Header navLinks={Routes} slug={slug}>
+            <Header navLinks={links} slug={slug}>
                 <h1 class="text-3xl font-serif text-center text-primary">{pageTitle}</h1>
             </Header>
             <Sidebar />

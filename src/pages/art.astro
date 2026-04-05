@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets";
+import Layout from "@/layouts/Base.astro";
+const pageTitle = "Artwork"
+const slug = "/art"
+
+import paintedField from "@/assets/images/painted_field.png";
+import roadNotTaken from "@/assets/images/TheRoadNotTaken.png";
+import dalek from "@/assets/images/DrDoodle_008.png";
+import tablets from "@/assets/images/Tablets_Blank_04_0001.png"
+import wolf from "@/assets/images/wolf_in_shadow.png"
+---
+
+<Layout pageTitle={pageTitle} slug={slug}>
+    <div class="card" aria-labelledby="card-1-title">
+        <header>
+            <h2 id="card-title-1">My Art</h2>
+        </header>
+        <section>
+            <p>This page contains a subset of my artwork.  I'm working on adding stuff all the time. I work with both Blender and 3D, and 2D drawing. </p>
+        </section>
+    </div>
+    <div class="card">
+        <header>
+            <h2>Shape Study</h2>
+            <p>A quick digital watercolor, creating the shapes of a landscape</p>
+        </header>
+        <section>
+            <Image src={paintedField} width={300} height={250} class="mx-auto" alt="Painted Field" />
+        </section>
+        <footer>
+            <p><em>Digital Art Created with Krita</em></p>
+        </footer>
+    </div>
+    <div class="card">
+        <header>
+            <h2>Road Not Taken</h2>
+            <p>An unfinished study practicing perspective.</p>
+        </header>
+        <section>
+            <Image src={roadNotTaken} alt="The Road Not Taken" width={300} height={250} class="mx-auto" />
+        </section>
+        <footer>
+            <p><em>Digital Art Created with Krita</em></p>
+        </footer>
+    </div>
+    <div class="card">
+        <header>
+            <h2>A Threat</h2>
+            <p>A fan work interpretaion of a Dalek from <em><a>BBC Doctor Who</a></em>. Made in Krita.</p>
+        </header>
+        <section>
+            <Image src={dalek} alt="Lonely Dalek in brick room looking at viewer. " width={300} height={250} class="mx-auto" />
+        </section>
+        <footer>
+            <p><em>Digital Art Created with Krita</em></p>
+        </footer>
+    </div>
+    <div class="card">
+        <header>
+            <h2>The Three AnitTablets</h2>
+            <p>I had a collection of 3D assets, and wanted to experiemnt with a new world-lighting plugin. I staged the collection of objects on the table, and experimented with lighting to make an interesting "golden hour" effect.  I have been told that this image looks "AI" because it is so deeply weird.</p>
+        </header>
+        <section>
+            <Image src={tablets} alt="Collection of 3D assets rendedered on a table with a weird depth of field. Experimenting with lighting" width={300} height={250} class="mx-auto" />
+        </section>
+        <footer>
+            <p><em>3D Render Created with Blender v3</em></p>
+        </footer>
+    </div>
+    <div class="card">
+        <header>
+            <h2>Wolf?</h2>
+            <p>An attempt at 3D modelling a wolf. While the modeling and texturing of the wolf is clearly unfinished, I found that it looked interesting to show the unfinished wolf on a grassy landscape.  The lighting quite intentionally removes any visible detail about the wolf, keeping it in shadow. This image works really well at small scales.</p>
+        </header>
+        <section>
+            <Image src={wolf} alt="An attempt at 3D modelling a wolf" width={300} height={250} class="mx-auto" />
+        </section>
+        <footer>
+            <p><em>3D Render Created with Blender v3</em></p>
+        </footer>
+    </div>
+</Layout>

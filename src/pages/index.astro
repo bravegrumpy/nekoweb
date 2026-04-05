@@ -15,11 +15,23 @@ const posts = Object.values(import.meta.glob("./posts/**/*.md", { eager: true })
 		<Rationale embedded={true}/>
 	</div>
 	<Stack />
-	{
-		posts.map((post: any) => {
-			return(<>
-				<a href={post.url} class="btn-link">{post.frontmatter.title}</a>
-			</>);
-		})
-	}
+	<div class="card">
+		<header>
+			<h2>Posts</h2>
+			<p>List of posts rendered on this page.</p>
+		</header>
+		<section>
+			<ul>
+				{
+					posts.map((post: any) => {
+						return(
+							<li class="font-sans text-center">
+								{post.frontmatter.title}
+							</li>
+						);
+					})
+				}
+			</ul>
+		</section>
+	</div>
 </Layout>

@@ -92,6 +92,26 @@ export default defineConfig({
       provider: fontProviders.fontsource(),
       name: "Workbench",
       cssVariable: "--font-workbench"
-    }
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Fira Code",
+      cssVariable: "--font-fira-code"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Oxanium",
+      cssVariable: "--font-oxanium"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Source Code Pro",
+      cssVariable: "--font-source-code-pro"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Libre Baskerville",
+      cssVariable: "--font-libre-baskerville"
+    },
   ]
 });
