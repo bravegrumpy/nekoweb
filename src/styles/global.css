@@ -6,10 +6,9 @@
 
 
 @utility masonry {
-    /*
     display: grid-lanes;
-    */
-    display: grid;
+    
+    /* display: grid; */
 }
 
 @-webkit-document url-prefix() {}
