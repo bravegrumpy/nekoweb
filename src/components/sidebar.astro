@@ -1,12 +1,11 @@
 ---
+import { Image } from "astro:assets";
 const pgs = Object.values(import.meta.glob("@/pages/*.astro", {eager: true}))
 const posts = Object.values(import.meta.glob("@/pages/posts/**/*.md", { eager: true}))
 ---
 
 <aside class="hidden md:block sidebar" data-side="left" aria-hidden="true">
     <nav aria-label="Sidebar navigation">
-        <section class="sidebar-header">
-        </section>
         <section class="scrollbar">
             <div role="group" aria-labelledby="group-label-content-1">
                 <h3 id="group-label-content-1" class="font-serif text-3xl py-5 bg-accent/20 dark:bg-primary/10">Pages</h3>
@@ -26,6 +25,7 @@ const posts = Object.values(import.meta.glob("@/pages/posts/**/*.md", { eager: t
                     }
                 </ul>
             </div>
+            {/*
             <div role="group" aria-labelledby="group-label-content-2">
                 <h3 id="group-label-content-2" class="font-serif text-3xl btn bg-accent dark:bg-accent dark:text-accent-foreground hover:dark:bg-secondary/30 shadow text-accent-foreground py-5 hover:bg-muted/80" onclick="toggleBlogPosts()">Blog Posts</h3>
                 <ul id="blog-post-list" class="hidden">
@@ -38,6 +38,26 @@ const posts = Object.values(import.meta.glob("@/pages/posts/**/*.md", { eager: t
                             )
                         })
                     }
+                </ul>
+            </div>
+            */}
+            <div role="group" aria-labelledby="group-label-content-3">
+                <h3 id="group-label-content-3" class="font-serif text-3xl h-fit p-5 bg-accent/20 dark:bg-primary/10">Button Collection</h3>
+                <p>Links to other websites!!</p>
+                <ul>
+                    <li>
+                        <a href="https://jockstar.nekoweb.org/" target="_blank" rel="noreferrer noopen nofollow">
+                            <Image src="https://jockstar.nekoweb.org/buttons/jsb.gif" alt="Jockstar" width={88} height={31} />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div role="group" aria-labelledby="group-label-content-4">
+                <h3 id="group-label-content-4" class="font-serif text-3xl p-5 bg-accent/20 dark:bg-primary/10">Follow Me!</h3>
+                <ul>
+                    <li>
+                        <!--# follow -->
+                    </li>
                 </ul>
             </div>
         </section>
