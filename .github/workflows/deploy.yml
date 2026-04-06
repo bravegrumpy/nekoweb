@@ -36,12 +36,6 @@ jobs:
 
       - name: Removing 404, only keeping not_found
         run: rm -rf ./dist/404.html
-      
-      - name: Copying auth route to _auth route
-        run: cp ./dist/auth/index.html ./dist/_auth.html
-      
-      - name: Removing auth route
-        run: rm -rf ./dist/auth
 
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@main
