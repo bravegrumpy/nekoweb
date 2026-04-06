@@ -9,7 +9,8 @@
             "width": 300,
             "height": 250
         },
-        "footer": "Digital Art Created with Krita"
+        "footer": "Digital Art Created with Krita",
+        "display": false
     },
     {
         "id": "road-not-taken",
@@ -21,7 +22,8 @@
             "width": 300,
             "height": 250
         },
-        "footer": "Digital Art Created with Krita"
+        "footer": "Digital Art Created with Krita",
+        "display": false
     },
     {
         "id": "dalek-threat",
@@ -33,7 +35,8 @@
             "width": 300,
             "height": 250
         },
-        "footer": "Digital Art Created with Krita"
+        "footer": "Digital Art Created with Krita",
+        "display": true
     },
     {
         "id": "three-anit-tablets",
@@ -45,7 +48,8 @@
             "width": 300,
             "height": 250
         },
-        "footer": "3D Render Created with Blender v3"
+        "footer": "3D Render Created with Blender v3",
+        "display": true
     },
     {
         "id": "wolf-in-shadow",
@@ -57,7 +61,8 @@
             "width": 300,
             "height": 250
         },
-        "footer": "3D Render Created with Blender v3"
+        "footer": "3D Render Created with Blender v3",
+        "display": true
     },
     {
         "id": "resin-casting-render",
@@ -69,7 +74,8 @@
             "width": 300,
             "height": 250
         },
-        "footer":"3D Render Created with Blender v3"
+        "footer":"3D Render Created with Blender v3",
+        "display": true
     },
     {
         "id": "lonely-tree",
@@ -81,6 +87,7 @@
             "width": 300,
             "height": 250
         },
-        "footer":"Digital Painting Created with Affinity Photo"
+        "footer":"Digital Painting Created with Affinity Photo",
+        "display": true
     }
 ]

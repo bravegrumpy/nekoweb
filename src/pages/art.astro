@@ -27,6 +27,7 @@ import wolf from "@/assets/images/wolf_in_shadow.png"
 
     {
         artwork.map((art) => {
+            if (art.data.display) {
             return(<div class="card">
                 <header>
                     <h2>{art.data.title}</h2>
@@ -39,6 +40,7 @@ import wolf from "@/assets/images/wolf_in_shadow.png"
                     <p><em>{art.data.footer}</em></p>
                 </footer>
             </div>)
+            }
         })
     }
 </Layout>
