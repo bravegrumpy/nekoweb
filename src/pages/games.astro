@@ -1,0 +1,31 @@
+---
+import Layout from "@/layouts/Base.astro";
+const slug = "/games";
+const pageTitle = "Video Games I like"
+---
+<Layout pageTitle={pageTitle} slug={slug}>
+    <div class="card">
+        <header>
+            <h2>Deep Rock Galactic</h2>
+        </header>
+        <section class="rounded border-2 w-fit mx-auto border-secondary">
+            <h3>Favorite Build:</h3>
+            <p>Engineer</p>
+        </section>
+        <section class="rounded border-2 w-fit mx-auto border-secondary">
+            <p>Stuff and things</p>
+        </section>
+    </div>
+    <div class="card p-5">
+        <header>
+            <h2>Outer Wilds</h2>
+        </header>
+        <section class="rounded border-2 w-fit mx-auto border-secondary">
+            <p>Look this is a videogame where the only thing that you can progress is your own knowledge of the game.  There is no such thing as gear, or powerups health.  You also have unlimited lives <em>because</em> it is a time loop. In fact there are instances where intentionally dying is a valid tactic to solve a puzzle.</p>
+        </section>
+        <section class="rounded border-2 py-2 w-fit mx-auto border-secondary">
+            <p>Every loop is exactly identical.</p>
+            <p>This is what makes this method of gameplay work.</p>
+        </section>
+    </div>
+</Layout>

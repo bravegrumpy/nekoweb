@@ -113,5 +113,30 @@ export default defineConfig({
       name: "Libre Baskerville",
       cssVariable: "--font-libre-baskerville"
     },
+    {
+      provider: fontProviders.fontsource(),
+      name: "VT323",
+      cssVariable: "--font-vt323"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Homenaje",
+      cssVariable: "--font-homenaje"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Arvo",
+      cssVariable: "--font-arvo"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Roboto",
+      cssVariable: "--font-roboto"
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Roboto Mono",
+      cssVariable: "--font-roboto-mono"
+    }
   ]
 });

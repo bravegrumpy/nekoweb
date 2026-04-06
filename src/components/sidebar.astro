@@ -9,14 +9,14 @@ const posts = Object.values(import.meta.glob("@/pages/posts/**/*.md", { eager: t
         </section>
         <section class="scrollbar">
             <div role="group" aria-labelledby="group-label-content-1">
-                <h3 id="group-label-content-1" class="font-serif text-3xl">Pages</h3>
+                <h3 id="group-label-content-1" class="font-serif text-3xl py-5 bg-accent/20 dark:bg-primary/10">Pages</h3>
                 <ul>
                     {
                         pgs.length > 2 ? (
                             pgs.map((page: any) => {
                                 if ((page.url !== "/404") && (page.url !== "")) {
                                     return (
-                                        <li><a class="font-serif btn-link" href={page.url}>{page.url}</a></li>
+                                        <li><a class="font-serif btn-link dark:text-primary text-primary-foreground" href={page.url}>{page.url}</a></li>
                                     )
                                 }
                             })
@@ -27,13 +27,13 @@ const posts = Object.values(import.meta.glob("@/pages/posts/**/*.md", { eager: t
                 </ul>
             </div>
             <div role="group" aria-labelledby="group-label-content-2">
-                <h3 id="group-label-content-2" class="font-serif text-3xl">Blog Posts</h3>
-                <ul>
+                <h3 id="group-label-content-2" class="font-serif text-3xl btn bg-accent dark:bg-accent dark:text-accent-foreground hover:dark:bg-secondary/30 shadow text-accent-foreground py-5 hover:bg-muted/80" onclick="toggleBlogPosts()">Blog Posts</h3>
+                <ul id="blog-post-list" class="hidden">
                     {
                         posts.map((post: any) => {
                             return(
                                 <li>
-                                    <a class="btn-link" href={post.url}>{post.frontmatter.title}</a>
+                                    <a class="btn-link font-sans dark:text-primary text-primary-foreground" href={post.url}>{post.frontmatter.title}</a>
                                 </li>
                             )
                         })
@@ -43,6 +43,17 @@ const posts = Object.values(import.meta.glob("@/pages/posts/**/*.md", { eager: t
         </section>
     </nav>
 </aside>
+
+<script is:inline>
+    function toggleBlogPosts() {
+        const list = document.querySelector("#blog-post-list");
+        if (list.classList.contains("hidden")) {
+            list.classList.remove("hidden")
+        } else {
+            list.classList.add("hidden")
+        }
+    }
+</script>
 
 
 <button id="sidebar-trigger" type="button" onclick="document.dispatchEvent(new CustomEvent('basecoat:sidebar'))" class="hidden md:inline iconify size-8 icon-[streamline-plump-color--layout-right-sidebar] fixed" style="transition: left 300ms, margin-left 300ms; margin-left: -90px"></button>

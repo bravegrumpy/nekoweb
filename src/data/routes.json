@@ -2,5 +2,6 @@
     { "href": "/", "text": "Home", "visible": "true" },
     { "href": "/blog", "text": "Blog", "visible": "false"},
     { "href": "/art", "text": "Artwork", "visible": "true"},
-    { "href": "/content", "text": "More", "visible": "false"}
+    { "href": "/content", "text": "More", "visible": "false"},
+    { "href": "/games", "text": "Video Games", "visible": "true"}
 ]
