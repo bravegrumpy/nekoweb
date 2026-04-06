@@ -89,5 +89,31 @@
         },
         "footer":"Digital Painting Created with Affinity Photo",
         "display": true
+    },
+    {
+        "id": "test-cat-02",
+        "title": "<a class='btn-link inline text-lg' href='https://artfight.net/character/6973496.todd-the-test-cat' target='_blank'>Character</a>: Test Cat",
+        "description": "A photo-scan of a sculpture of a cat made out of clay.  The clay was then imported into Blender, to, and was textured using texture-painting.  Then the entire render was exported into Affinity Photo and placed on a background. I made this as an oc for <a target='_blank' class='btn-link inline' href='https://artfight.net'>ArtFight 2025</a>. I quite enjoy him, as he really likes having patterns.",
+        "image": {
+            "src": "@/assets/images/CatTest02.png",
+            "alt": "Dark colored cat on a bright purple patterned background",
+            "width": 300,
+            "height": 250
+        },
+        "footer":"3D Mixed Media",
+        "display": true
+    },
+    {
+        "id": "post-fight-urban-decay",
+        "title": "Post Fight Urban Decay: The Prussian Cat",
+        "description": "This is another entry I made for ArtFight2025. I made this for the OC Prussian Cat. He is a german soldier from world war one.  I thought it would be interesting to put him in a gross environment. The owner of the OC seemed to like him, and retialiated with an adorable pattern of my test cat.",
+        "image": {
+            "src": "@/assets/images/PostfightUrbanDecay04.png",
+            "alt": "Digital Painting of a cartoon cat surrounded by urban decay",
+            "width": 300,
+            "height": 250
+        },
+        "footer":"Digital Painting Created with Affinity Photo",
+        "display": true
     }
 ]
