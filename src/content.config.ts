@@ -17,7 +17,7 @@ const artwork = defineCollection({
             height: z.number()
         }),
         footer: z.string(),
-        display: z.optional(z.boolean())
+        display: z.boolean()
 
     })
 });

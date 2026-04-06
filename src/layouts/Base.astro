@@ -25,6 +25,12 @@ const { pageTitle, slug } = Astro.props;
         <script>
             import "basecoat-css/all"
         </script>
+        <link 
+            rel="alternate"
+            type="application/rss+xml",
+            title={`${pageTitle} | BraveGrumpy`}
+            href={new URL("/art/rss.xml", Astro.site)}
+        />
         <Fonts />
 	</head>
 	<body>
