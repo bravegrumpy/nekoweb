@@ -1,0 +1,86 @@
+[
+    {
+        "id": "shape-study",
+        "title": "Shape Study",
+        "description": "A quick digital watercolor, creating the shapes of a landscape.",
+        "image": {
+            "src": "@/assets/images/painted_field.png",
+            "alt": "Painted Field",
+            "width": 300,
+            "height": 250
+        },
+        "footer": "Digital Art Created with Krita"
+    },
+    {
+        "id": "road-not-taken",
+        "title": "Road Not Taken",
+        "description": "An unfinished study practicing perspective.",
+        "image": {
+            "src": "@/assets/images/TheRoadNotTaken.png",
+            "alt": "The Road Not Taken",
+            "width": 300,
+            "height": 250
+        },
+        "footer": "Digital Art Created with Krita"
+    },
+    {
+        "id": "dalek-threat",
+        "title": "A Threat",
+        "description": "A fan work interpretaion of a Dalek from <em><a>BBC Doctor Who</a></em>. Made in Krita.",
+        "image": {
+            "src": "@/assets/images/DrDoodle_008.png",
+            "alt": "Lonely Dalek in brick room looking at viewer.",
+            "width": 300,
+            "height": 250
+        },
+        "footer": "Digital Art Created with Krita"
+    },
+    {
+        "id": "three-anit-tablets",
+        "title": "The Three AntiTablets",
+        "description": "I had a collection of 3D assets, and wanted to experiemnt with a new world-lighting plugin. I staged the collection of objects on the table, and experimented with lighting to make an interesting &ldquo;golden hour&rdquo; effect.  I have been told that this image looks &ldquo;AI&rdquo; because it is so deeply weird.",
+        "image": {
+            "src":"@/assets/images/Tablets_Blank_04_0001.png",
+            "alt": "Collection of 3D assets rendedered on a table with a weird depth of field. Experimenting with lighting",
+            "width": 300,
+            "height": 250
+        },
+        "footer": "3D Render Created with Blender v3"
+    },
+    {
+        "id": "wolf-in-shadow",
+        "title": "A Wolf?",
+        "description": "An attempt at 3D modelling a wolf. While the modeling and texturing of the wolf is clearly unfinished, I found that it looked interesting to show the unfinished wolf on a grassy landscape.  The lighting quite intentionally removes any visible detail about the wolf, keeping it in shadow. This image works really well at small scales.",
+        "image": {
+            "src": "@/assets/images/wolf_in_shadow.png",
+            "alt": "An attempt at 3D modelling a wolf",
+            "width": 300,
+            "height": 250
+        },
+        "footer": "3D Render Created with Blender v3"
+    },
+    {
+        "id": "resin-casting-render",
+        "title": "Silicon Mold Making Setup",
+        "description": "This is a render of an example of what a setup could be to create a silicone mold of a pottery handle I made.  Unfortunately this project did'nt go anywhere.  I am rather impressed at how well I 3D modeled the actual real-life setup I used. However, rather than working cleanly, like things do in a render, this became a whole-ass mess.",
+        "image": {
+            "src": "@/assets/images/ResinCastingTest.png",
+            "alt": "A 3D render of a tall tube in a transparent plastic bin, atop a craft mat. There is also a handle and a spray can in the setup.",
+            "width": 300,
+            "height": 250
+        },
+        "footer":"3D Render Created with Blender v3"
+    },
+    {
+        "id": "lonely-tree",
+        "title": "Lonely Tree",
+        "description": "A digital painting of a lonely willow tree. I liked how I used pastel colors, and focued on using minor perturbations in hue to create texturing. This painting was inspried by <em><a class='btn-link' href='https://www.bravegrumpy.com/writing/huetopia/wbw' target='_blank'>the willow</a></em> in my fictional work, Huetopia.",
+        "image": {
+            "src": "@/assets/images/lonely_tree.png",
+            "alt": "Digital painting of a tree without leaves",
+            "width": 300,
+            "height": 250
+        },
+        "footer":"Digital Painting Created with Affinity Photo"
+    }
+]
