@@ -2,7 +2,7 @@
 export type route = {
     href: string;
     text: string;
-    visible: "true" | "false";
+    visible: boolean;
 }
 
 interface Props {
@@ -17,7 +17,7 @@ const { navLinks, slug } = Astro.props;
     <div id="links" class="w-full hidden md:flex flex-col md:flex-row gap-2">
         {
             navLinks.map((link: route) => {
-                if (link.visible === "true") {
+                if (link.visible) {
                     return(
                         <a class={`${link.href === slug ? "btn-secondary" : "btn"}`} href={link.href}>{link.text}</a>
                     );

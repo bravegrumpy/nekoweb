@@ -22,4 +22,14 @@ const artwork = defineCollection({
     })
 });
 
-export const collections = { artwork }
+const routes = defineCollection({
+    loader: file("src/data/routes.json"),
+    schema: z.object({
+        id: z.string(),
+        href: z.string(),
+        text: z.string(),
+        visible: z.boolean()
+    })
+})
+
+export const collections = { artwork, routes }

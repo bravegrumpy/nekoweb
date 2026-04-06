@@ -2,6 +2,8 @@
 import "@/styles/global.css"
 import Fonts from "@/components/fonts.astro"
 
+import { getCollection } from "astro:content";
+
 import { type route} from "@/components/navigation.astro";
 
 import Header from "@/components/header.astro"
@@ -32,6 +34,7 @@ const { pageTitle, slug } = Astro.props;
             title={`${pageTitle} | BraveGrumpy`}
             href={new URL("/art/rss.xml", Astro.site)}
         />
+        <link rel="sitemap" href="/sitemap-index.xml" />
         <Fonts />
 	</head>
 	<body>

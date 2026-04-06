@@ -1,7 +1,7 @@
 [
-    { "href": "/", "text": "Home", "visible": "true" },
-    { "href": "/blog", "text": "Blog", "visible": "false"},
-    { "href": "/art", "text": "Artwork", "visible": "true"},
-    { "href": "/content", "text": "More", "visible": "false"},
-    { "href": "/games", "text": "Video Games", "visible": "true"}
+    { "id": "home", "href": "/", "text": "Home", "visible": true },
+    { "id": "blog", "href": "/blog", "text": "Blog", "visible": false },
+    { "id": "art", "href": "/art", "text": "Artwork", "visible": true },
+    { "id": "content", "href": "/content", "text": "More", "visible": false },
+    { "id": "games", "href": "/games", "text": "Video Games", "visible": true }
 ]
