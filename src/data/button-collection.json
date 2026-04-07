@@ -30,6 +30,16 @@
         "attribution": "max.nekoweb.org"
     },
     {
+        "id": 4,
+        "owner": "other",
+        "href": "https://petrapixel.neocities.org/",
+        "image": {
+            "src": "https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif",
+            "alt": "petrapixel"
+        },
+        "attribution": "petrapixel"
+    },
+    {
         "id": 101,
         "owner": "me",
         "href": "https://mertherfanfic.neocities.org",
