@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "owner": "other",
+        "href": "https://jockstar.nekoweb.org",
+        "image": {
+            "src": "https://jockstar.nekoweb.org/buttons/jsb.gif",
+            "alt": "Jockstar"
+        },
+        "attribution": "Jockstar"
+    },
+    {
+        "id": 2,
+        "owner": "other",
+        "href": "https://jbc.lol",
+        "image": {
+            "src": "https://jbc.lol/imgs/buttons/jbtn.svg",
+            "alt": "jb's site"
+        },
+        "attribution": "jbc" 
+    },
+    {
+        "id": 3,
+        "owner": "other",
+        "href": "https://nekoweb.org/",
+        "image": {
+            "src": "https://nekoweb.org/assets/buttons/button5.gif",
+            "alt": "button by max.nekoweb.org"
+        },
+        "attribution": "max.nekoweb.org"
+    },
+    {
+        "id": 101,
+        "owner": "me",
+        "href": "https://mertherfanfic.neocities.org",
+        "image": {
+            "src": "/src/assets/images/MerlinButton.png",
+            "alt": "Merlin"
+        }
+    },
+    {
+        "id": 102,
+        "owner": "me",
+        "href": "https://bravegrumpy.neocities.org",
+        "image": {
+            "src": "https://cdn.bravegrumpy.com/static/assets/images/BraveGrumpyRectangle_color_typed.png",
+            "alt": "BraveGrumpy"
+        }
+    }
+]

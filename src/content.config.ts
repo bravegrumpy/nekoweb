@@ -30,6 +30,20 @@ const routes = defineCollection({
         text: z.string(),
         visible: z.boolean()
     })
+});
+
+const buttons = defineCollection({
+    loader: file("src/data/button-collection.json"),
+    schema: ({ image }) => z.object({
+        id: z.number(),
+        owner: z.union([z.literal("other"), z.literal("me")]),
+        href: z.url(),
+        image: z.object({
+            src: image(),
+            alt: z.string(),
+        }),
+        attribution: z.optional(z.string())
+    })
 })
 
-export const collections = { artwork, routes }
+export const collections = { artwork, routes, buttons }

@@ -1,7 +1,14 @@
 ---
+import MerlinButton from "@/assets/images/MerlinButton.png";
+
+import { getCollection } from "astro:content";
+
 import { Image } from "astro:assets";
 const pgs = Object.values(import.meta.glob("@/pages/*.astro", {eager: true}))
-const posts = Object.values(import.meta.glob("@/pages/posts/**/*.md", { eager: true}))
+const posts = Object.values(import.meta.glob("@/pages/posts/**/*.md", { eager: true}));
+
+const buttons = await getCollection("buttons");
+
 ---
 
 <aside class="hidden md:block sidebar" data-side="left" aria-hidden="true">
@@ -43,35 +50,48 @@ const posts = Object.values(import.meta.glob("@/pages/posts/**/*.md", { eager: t
             */}
             <div role="group" aria-labelledby="group-label-content-3">
                 <h3 id="group-label-content-3" class="font-serif text-3xl h-fit p-5 bg-accent/20 dark:bg-primary/10">Button Collection</h3>
+                <p>Links to MY websites</p>
+                <ul>
+                    {
+                        buttons.map((button) => {
+                            if (button.data.owner === "me") {
+                                return (
+                                    <li>
+                                        <a href={button.data.href} target="_blank">
+                                            <Image 
+                                                src={button.data.image.src}
+                                                alt={button.data.image.alt}
+                                                width={88}
+                                                height={31}
+                                            />
+                                        </a>
+                                    </li>
+                                )
+                            }
+                        })
+                    }                    
+                </ul>
                 <p>Links to other websites!!</p>
                 <ul>
-                    <li>
-                        <a href="https://jockstar.nekoweb.org/" target="_blank" rel="noreferrer noopen nofollow">
-                            <Image src="https://jockstar.nekoweb.org/buttons/jsb.gif" alt="Jockstar" width={88} height={31} />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://jbc.lol">
-                            <Image 
-                                src="https://jbc.lol/imgs/buttons/jbtn.svg" 
-                                alt="jb's site"
-                                style="image-rendering: pixelated;"
-                                width={88}
-                                height={31}
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://nekoweb.org/">
-                            <Image 
-                                src="https://nekoweb.org/assets/buttons/button5.gif"
-                                alt="button by max.nekoweb.org"
-                                width={88}
-                                height={31}
-                            >
-                        </a>
-                        <!-- button by max.nekoweb.org -->
-                    </li>
+                    {
+                        buttons.map((button) => {
+                            if (button.data.owner === "other") {
+                                return (<li>
+                                    <a href={button.data.href} target="_blank" rel="noreferrer noopen nofollow">
+                                        <Image 
+                                            src={button.data.image.src}
+                                            alt={button.data.image.alt}
+                                            width={88}
+                                            height={31}
+                                        />
+                                    </a>
+                                    {button.data.attribution ? (
+                                        <span class="sr-only">button by {button.data.attribution}</span>
+                                    ) : (<></>)}
+                                </li>)
+                            }
+                        })
+                    }
                 </ul>
             </div>
             <div role="group" aria-labelledby="group-label-content-4">
