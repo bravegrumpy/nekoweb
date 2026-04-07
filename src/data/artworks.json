@@ -115,5 +115,18 @@
         },
         "footer":"Digital Painting Created with Affinity Photo",
         "display": true
+    },
+    {
+        "id": "merther-website",
+        "title": "Website Design for NSFW fanwork site",
+        "description": "The <em>consent screen</em> for my <a href='https://mertherfanfic.neocities.org' class='btn-link'>BBC Merlin fanfiction website.</a>. The entire site layout and lots of different interactions were really fun to make. I had arguably too much fun incorporating aged-paper and parchment theming into this website. This is an example of skeuomorphic design.",
+        "image":{
+            "src": "@/assets/images/merther.png",
+            "alt": "Consent splash screen on a highly decorated website.",
+            "width": 500,
+            "height": 400
+        },
+        "footer": "Website build with AstroJS",
+        "display": true
     }
 ]
