@@ -1,4 +1,3 @@
-/*!@nkb "domain":"jbc.lol","rss":"","overflow":false,"readonly":false */
 /*
     Don't use this file to edit your site style! Create a different CSS file for that.
     This file defines how custom elements (like sitebox) will look like.
@@ -8,13 +7,13 @@
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
 .site-box {
     text-align: center;
-    /* background-image: url("/css-water.png"); Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+    background-image: url("https://bravegrumpy.nekoweb.org/css-water.png"); 
+    /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
     background-color: #05055e;
     background-repeat: no-repeat;
     background-size: cover;
     color: #d5f3f3;
     font-size: 16px;
-    border: 5px outset blueviolet;
 }
 .sitefeature {
     max-width: 70%;
