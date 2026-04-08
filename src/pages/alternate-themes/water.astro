@@ -1,11 +1,15 @@
 ---
 import Layout from "@/layouts/Water.astro";
 const pageTitle = "Water Theme"
+const slug = "/alternate-themes/water"
+
+const pg = Astro.url.pathname;
 ---
 
-<Layout pageTitle={pageTitle} slug="/alternate-themes/water">
+<Layout pageTitle={pageTitle} slug={slug}>
 	<div>
 		<h2>Some Content</h2>
 		<p>I will put some content here.</p>
+		<p>{pg}</p>
 	</div>
 </Layout>

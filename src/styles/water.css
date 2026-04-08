@@ -2,7 +2,8 @@
     --radius: 10px;
     --base-color: oklch(95.705% 0.04021 192.837);
     --base-color2: oklch(76.799% 0.16258 163.881);
-    --texture-name: "TCom_Animated_WaterCaustics_512_overlay"
+    --texture-name: "TCom_Animated_WaterCaustics_512_overlay";
+    /* --font-fancy: var(--font-sofadi-one); */
 }
 
 /*
@@ -73,14 +74,20 @@ nav {
 .nav-link {
     background-color: oklch(54.313% 0.09273 194.807);
     color: oklch(85.608% 0.20679 123.021);
-    font-family: var(--font-fancy);
+    /* font-family: var(--font-fancy); */
+    font-family: var(--font-sofadi-one);
     font-size: 18pt;
     padding: 2px 5px;
     border-radius: var(--radius);
     border: 5px outset blueviolet;
+    text-decoration-line: none;
 }
 
 .active {
     background-color: oklch(38.135% 0.08545 158.467);
     color: oklch(83.714% 0.14399 188.683);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    
 }
