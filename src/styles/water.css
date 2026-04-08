@@ -4,6 +4,7 @@
     --base-color2: oklch(76.799% 0.16258 163.881);
     --texture-name: "TCom_Animated_WaterCaustics_512_overlay";
     /* --font-fancy: var(--font-sofadi-one); */
+    --font-fancy: var(--font-sofadi-one), "Arial", "Garamond", sans-serif;
 }
 
 /*
@@ -85,7 +86,7 @@ nav {
     background: linear-gradient(to bottom, oklch(56.381% 0.09232 79.947), rgba(90, 89, 11, 0.952));
     color: oklch(85.608% 0.20679 123.021);
     /* font-family: var(--font-fancy); */
-    font-family: var(--font-sofadi-one);
+    font-family: var(--font-fancy);
     font-size: 18pt;
     padding: 2px 5px;
     border-radius: var(--radius);
