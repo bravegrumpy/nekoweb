@@ -5,22 +5,72 @@ import { Image } from "astro:assets";
 import Floaty from "@/assets/images/flotation-tube.png";
 ---
 
-<Layout slug={slug} pageTitle="Page Not Found">
-    <div class="floaty">
+<Layout showNav={false}>
+    <div class="go-home">
         <a href="/">
-            <Image 
-                src={Floaty} 
-                width={800} 
-                height={800} 
-                alt="Flotation Device"
-            />
+            👉
         </a>
+    </div>
+    <div class="rope-text">
+        <a href="/alternate-themes/water">return to water theme</a>
     </div>
 </Layout>
 
-<style>
-    .floaty {
-        margin-left: -50%;
-        margin-top: -70%
+<style is:global>
+    body {
+        max-width: 1000px;
+        background: url("@/assets/images/flotation-tube.png");
+        background-position: 0px -50px;
+        background-size: 1024px 1024px;
+        background-repeat: no-repeat;
+        border: 2px solid transparent;
+    }
+
+    .go-home {
+        max-width: 150px;
+        width: fit-content;
+        max-height: 50px;
+        padding: 0px;
+        height: fit-content;
+        position: relative;
+        left: 350px;
+        top: -110px;
+        background-color: transparent;
+        border: 2px solid transparent;
+        font-size: 25pt;
+        rotate: -40deg;
+    }
+
+    .go-home:hover {
+        filter: hue-rotate(15deg);
+    }
+
+    .go-home a {
+        text-decoration: none;
+    }
+
+    .go-home a:hover {
+        font-size: 30pt;
+    }
+
+    .rope-text {
+        /* background-color: oklch(51.976% 0.17685 142.511 / 0.233); */
+        /* border: 2px solid magenta; */
+        rotate: -10deg;
+        position: absolute;
+        top: 37.5%;
+        left: 44%;
+        font-family: var(--font-capriola);
+        color: oklch(22.534% 0.09733 326.33);
+    }
+    .rope-text a {
+        text-decoration: none;
+    }
+    .rope-text a:hover {
+        scale: 110%;
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-thickness: 2px;
+        background-color: oklch(87.183% 0.17516 97.349 / 0.541);
     }
 </style>

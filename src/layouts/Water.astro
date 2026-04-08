@@ -45,7 +45,13 @@ const routes: route[] = [
 
 const currSlug = Astro.url.pathname;
 
-const { pageTitle, slug="/" } = Astro.props;
+interface Props {
+    pageTitle?: string;
+    slug?: string;
+    showNav?: boolean;
+}
+
+const { pageTitle, slug="/", showNav = true }:Props = Astro.props;
 
 // import Canoe from "@/assets/canoe.svg";
 ---
@@ -63,17 +69,21 @@ const { pageTitle, slug="/" } = Astro.props;
 	</head>
 	<body>
         <main>
-        <nav>
             {
-                routes.map((link: route) => {
-                    if (link.visible) {
-                    return (
-                        <a href={link.href} class={`${link.href === slug ? 'active' : ''} nav-link`}>{link.text}</a>
-                    )
-                    }
-                })
+                showNav ? (
+                    <nav>
+                        {
+                            routes.map((link: route) => {
+                                if (link.visible) {
+                                    return (
+                                        <a href={link.href} class={`${link.href === slug ? 'active ' : ''}nav-link`}>{link.text}</a>
+                                    )
+                                }
+                            })
+                        }
+                    </nav>
+                ) : (null)
             }
-        </nav>
 		<h1>{pageTitle}</h1>
         <slot />
         </main>
