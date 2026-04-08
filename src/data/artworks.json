@@ -128,5 +128,18 @@
         },
         "footer": "Website build with AstroJS",
         "display": true
+    },
+    {
+        "id": "water-theme",
+        "title": "Canoe Website Theme",
+        "description": "This is the <em>start</em> of a website theme based on the concept of water.  It needs <em>lots</em> more work before it is ready to go. You can look at it <a href='/alternate-themes/water/' class='btn-link'>here</a>.",
+        "image": {
+            "src": "@/assets/images/artwork/water-theme.png",
+            "alt": "Canoe on Water",
+            "width": 500,
+            "height": 400
+        },
+        "footer": "Website page build with AstroJS",
+        "display": true
     }
 ]
