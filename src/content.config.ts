@@ -6,7 +6,7 @@ import { z } from "astro/zod";
 
 const artwork = defineCollection({
     loader: file("src/data/artworks.json"),
-    schema: ({image}) =>  z.object({
+    schema: ({ image }) =>  z.object({
         id: z.string(),
         title: z.string(),
         description: z.string(),
