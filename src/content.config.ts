@@ -28,7 +28,8 @@ const routes = defineCollection({
         id: z.string(),
         href: z.string(),
         text: z.string(),
-        visible: z.boolean()
+        visible: z.boolean(),
+        order: z.number()
     })
 });
 

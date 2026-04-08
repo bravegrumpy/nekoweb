@@ -4,7 +4,7 @@
         "title": "Shape Study",
         "description": "A quick digital watercolor, creating the shapes of a landscape.",
         "image": {
-            "src": "@/assets/images/painted_field.png",
+            "src": "@/assets/images/artwork/painted_field.png",
             "alt": "Painted Field",
             "width": 300,
             "height": 250
@@ -17,7 +17,7 @@
         "title": "Road Not Taken",
         "description": "An unfinished study practicing perspective.",
         "image": {
-            "src": "@/assets/images/TheRoadNotTaken.png",
+            "src": "@/assets/images/artwork/TheRoadNotTaken.png",
             "alt": "The Road Not Taken",
             "width": 300,
             "height": 250
@@ -30,7 +30,7 @@
         "title": "A Threat",
         "description": "A fan work interpretaion of a Dalek from <em><a>BBC Doctor Who</a></em>. Made in Krita.",
         "image": {
-            "src": "@/assets/images/DrDoodle_008.png",
+            "src": "@/assets/images/artwork/DrDoodle_008.png",
             "alt": "Lonely Dalek in brick room looking at viewer.",
             "width": 300,
             "height": 250
@@ -43,7 +43,7 @@
         "title": "The Three AntiTablets",
         "description": "I had a collection of 3D assets, and wanted to experiemnt with a new world-lighting plugin. I staged the collection of objects on the table, and experimented with lighting to make an interesting &ldquo;golden hour&rdquo; effect.  I have been told that this image looks &ldquo;AI&rdquo; because it is so deeply weird.",
         "image": {
-            "src":"@/assets/images/Tablets_Blank_04_0001.png",
+            "src":"@/assets/images/artwork/Tablets_Blank_04_0001.png",
             "alt": "Collection of 3D assets rendedered on a table with a weird depth of field. Experimenting with lighting",
             "width": 300,
             "height": 250
@@ -56,7 +56,7 @@
         "title": "A Wolf?",
         "description": "An attempt at 3D modelling a wolf. While the modeling and texturing of the wolf is clearly unfinished, I found that it looked interesting to show the unfinished wolf on a grassy landscape.  The lighting quite intentionally removes any visible detail about the wolf, keeping it in shadow. This image works really well at small scales.",
         "image": {
-            "src": "@/assets/images/wolf_in_shadow.png",
+            "src": "@/assets/images/artwork/wolf_in_shadow.png",
             "alt": "An attempt at 3D modelling a wolf",
             "width": 300,
             "height": 250
@@ -69,7 +69,7 @@
         "title": "Silicon Mold Making Setup",
         "description": "This is a render of an example of what a setup could be to create a silicone mold of a pottery handle I made.  Unfortunately this project did'nt go anywhere.  I am rather impressed at how well I 3D modeled the actual real-life setup I used. However, rather than working cleanly, like things do in a render, this became a whole-ass mess.",
         "image": {
-            "src": "@/assets/images/ResinCastingTest.png",
+            "src": "@/assets/images/artwork/ResinCastingTest.png",
             "alt": "A 3D render of a tall tube in a transparent plastic bin, atop a craft mat. There is also a handle and a spray can in the setup.",
             "width": 300,
             "height": 250
@@ -82,7 +82,7 @@
         "title": "Lonely Tree",
         "description": "A digital painting of a lonely willow tree. I liked how I used pastel colors, and focued on using minor perturbations in hue to create texturing. This painting was inspried by <em><a class='btn-link' href='https://www.bravegrumpy.com/writing/huetopia/wbw' target='_blank'>the willow</a></em> in my fictional work, Huetopia.",
         "image": {
-            "src": "@/assets/images/lonely_tree.png",
+            "src": "@/assets/images/artwork/lonely_tree.png",
             "alt": "Digital painting of a tree without leaves",
             "width": 300,
             "height": 250
@@ -95,7 +95,7 @@
         "title": "<a class='btn-link inline text-lg' href='https://artfight.net/character/6973496.todd-the-test-cat' target='_blank'>Character</a>: Test Cat",
         "description": "A photo-scan of a sculpture of a cat made out of clay.  The clay was then imported into Blender, to, and was textured using texture-painting.  Then the entire render was exported into Affinity Photo and placed on a background. I made this as an oc for <a target='_blank' class='btn-link inline' href='https://artfight.net'>ArtFight 2025</a>. I quite enjoy him, as he really likes having patterns.",
         "image": {
-            "src": "@/assets/images/CatTest02.png",
+            "src": "@/assets/images/artwork/CatTest02.png",
             "alt": "Dark colored cat on a bright purple patterned background",
             "width": 300,
             "height": 250
@@ -108,7 +108,7 @@
         "title": "Post Fight Urban Decay: The Prussian Cat",
         "description": "This is another entry I made for ArtFight2025. I made this for the OC Prussian Cat. He is a german soldier from world war one.  I thought it would be interesting to put him in a gross environment. The owner of the OC seemed to like him, and retialiated with an adorable pattern of my test cat.",
         "image": {
-            "src": "@/assets/images/PostfightUrbanDecay04.png",
+            "src": "@/assets/images/artwork/PostfightUrbanDecay04.png",
             "alt": "Digital Painting of a cartoon cat surrounded by urban decay",
             "width": 300,
             "height": 250
@@ -121,7 +121,7 @@
         "title": "Website Design for NSFW fanwork site",
         "description": "The <em>consent screen</em> for my <a href='https://mertherfanfic.neocities.org' class='btn-link'>BBC Merlin fanfiction website.</a>. The entire site layout and lots of different interactions were really fun to make. I had arguably too much fun incorporating aged-paper and parchment theming into this website. This is an example of skeuomorphic design.",
         "image":{
-            "src": "@/assets/images/merther.png",
+            "src": "@/assets/images/artwork/merther.png",
             "alt": "Consent splash screen on a highly decorated website.",
             "width": 500,
             "height": 400

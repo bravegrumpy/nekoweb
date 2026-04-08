@@ -1,7 +1,8 @@
 [
-    { "id": "home", "href": "/", "text": "Home", "visible": true },
-    { "id": "blog", "href": "/blog", "text": "Blog", "visible": false },
-    { "id": "art", "href": "/art", "text": "Artwork", "visible": true },
-    { "id": "content", "href": "/content", "text": "More", "visible": false },
-    { "id": "games", "href": "/games", "text": "Video Games", "visible": true }
+    { "id": "home", "href": "/", "text": "Home", "visible": true, "order": 1 },
+    { "id": "blog", "href": "/blog", "text": "Blog", "visible": false, "order": 2 },
+    { "id": "art", "href": "/art", "text": "Artwork", "visible": true, "order": 3 },
+    { "id": "content", "href": "/content", "text": "More", "visible": false, "order": 4 },
+    { "id": "games", "href": "/games", "text": "Video Games", "visible": true, "order": 5 },
+    { "id": "water", "href": "/alternate-themes/water", "text": "Water Theme", "visible": true, "order": 6}
 ]

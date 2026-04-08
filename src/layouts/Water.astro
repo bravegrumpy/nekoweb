@@ -1,0 +1,61 @@
+---
+import "@/styles/water.css";
+import Fonts from "@/components/fonts.astro";
+
+type route = {
+    id: number | string;
+    href: string;
+    text: string;
+    visible: boolean;
+    order: number;
+}
+
+const routes: route[] = [
+    {
+        id: 0,
+        href: "/",
+        text: "Home",
+        visible: true,
+        order: 1
+    },
+    {
+        id: 1,
+        href: "/art",
+        text: "Gallery",
+        visible: true,
+        order: 2
+    }
+]
+
+const { pageTitle, slug="/" } = Astro.props;
+---
+
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle} | Astro</title>
+
+        <Fonts />
+	</head>
+	<body>
+        <main>
+        <nav>
+            {
+                routes.map((link: route) => {
+                    if (link.visible) {
+                    return (
+                        <a href={link.href} class={`${link.href === slug ? 'active' : ''} nav-link`}>{link.text}</a>
+                    )
+                    }
+                })
+            }
+        </nav>
+		<h1>{pageTitle}</h1>
+        <slot />
+        </main>
+	</body>
+</html>
