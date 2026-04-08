@@ -41,7 +41,7 @@ const { pageTitle, slug } = Astro.props;
         <Header navLinks={links} slug={slug}>
             <h1 class="text-3xl font-serif text-center text-primary">{pageTitle}</h1>
         </Header>
-        <main class="masonry grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-10 px-5">
+        <main class="masonry grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-10 px-5 mb-10 lg:min-h-screen xl:min-h-screen 2xl:min-h-screen">
             <Sidebar />
             <slot />
         </main>
