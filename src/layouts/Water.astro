@@ -1,6 +1,7 @@
 ---
 import "@/styles/water.css";
 import Fonts from "@/components/fonts.astro";
+import { Font } from "astro:assets";
 
 import { getCollection } from "astro:content";
 
@@ -60,6 +61,7 @@ const { pageTitle, slug="/" } = Astro.props;
 		<title>{pageTitle} | Astro</title>
 
         <Fonts />
+        <Font cssVariable="--font-sofadi-one"/>
 	</head>
 	<body>
         <main>
