@@ -61,9 +61,10 @@ main {
 nav {
     border: 2px solid transparent;
     max-width: 200px;
+    overflow-x: scroll;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: fit-content;
     gap: 10px;
     justify-content: flex-start;
@@ -72,22 +73,25 @@ nav {
 }
 
 .nav-link {
-    background-color: oklch(54.313% 0.09273 194.807);
+    /* background-color: oklch(54.313% 0.09273 194.807); */
+    background: linear-gradient(to bottom, oklch(56.381% 0.09232 79.947), rgba(90, 89, 11, 0.952));
     color: oklch(85.608% 0.20679 123.021);
     /* font-family: var(--font-fancy); */
     font-family: var(--font-sofadi-one);
     font-size: 18pt;
     padding: 2px 5px;
     border-radius: var(--radius);
-    border: 5px outset blueviolet;
+    border: 5px outset oklch(68.348% 0.0082 187.327);
     text-decoration-line: none;
 }
 
 .active {
-    background-color: oklch(38.135% 0.08545 158.467);
-    color: oklch(83.714% 0.14399 188.683);
+    /* background-color: oklch(38.135% 0.08545 158.467); */
+    background: radial-gradient(oklch(67.96% 0.0862 81.749) 50%, oklch(47.506% 0.07865 96.619));
+    color: oklch(57.373% 0.23367 262.678);
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-decoration-thickness: 2px;
-    
+    border-style: inset;
+
 }

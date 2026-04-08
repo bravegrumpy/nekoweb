@@ -2,6 +2,8 @@
 import "@/styles/water.css";
 import Fonts from "@/components/fonts.astro";
 
+import { getCollection } from "astro:content";
+
 type route = {
     id: number | string;
     href: string;
@@ -10,16 +12,26 @@ type route = {
     order: number;
 }
 
+const newRoutes = await getCollection("routes");
+
+
 const routes: route[] = [
     {
         id: 0,
         href: "/",
         text: "Home",
         visible: true,
-        order: 1
+        order: 0
     },
     {
         id: 1,
+        href: "/alternate-themes/water",
+        text: "Water",
+        visible: true,
+        order: 1
+    },
+    {
+        id: 2,
         href: "/art",
         text: "Gallery",
         visible: true,
