@@ -40,6 +40,16 @@
         "attribution": "petrapixel"
     },
     {
+        "id": 5,
+        "owner": "other",
+        "href": "https://max.nekoweb.org/",
+        "image": {
+            "src": "https://max.nekoweb.org/images/button.png",
+            "alt": "max's apartment"
+        },
+        "attribution": "max's apartment"
+    },
+    {
         "id": 101,
         "owner": "me",
         "href": "https://mertherfanfic.neocities.org",
