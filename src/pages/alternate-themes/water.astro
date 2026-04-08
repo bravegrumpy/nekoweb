@@ -7,9 +7,14 @@ const pg = Astro.url.pathname;
 ---
 
 <Layout pageTitle={pageTitle} slug={slug}>
-	<div>
+	<div class="container">
+	<div class="content">
 		<h2>Some Content</h2>
 		<p>I will put some content here.</p>
 		<p>Check out the <a href="/alternate-themes/lost">alternate 404 page</a></p>
+	</div>
+	<div class="content">
+		<p>Be careful, as this theme is currently best viewed at 1920 x 1080</p>
+	</div>
 	</div>
 </Layout>
