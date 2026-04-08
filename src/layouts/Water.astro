@@ -14,6 +14,10 @@ type route = {
 
 const newRoutes = await getCollection("routes");
 
+const new_routes: route[] = newRoutes.map((link) => link.data);
+
+new_routes.sort((a, b) => a.order - b.order);
+
 
 const routes: route[] = [
     {
@@ -34,7 +38,7 @@ const routes: route[] = [
         id: 2,
         href: "/art",
         text: "Gallery",
-        visible: true,
+        visible: false,
         order: 2
     }
 ]
@@ -42,6 +46,8 @@ const routes: route[] = [
 const currSlug = Astro.url.pathname;
 
 const { pageTitle, slug="/" } = Astro.props;
+
+// import Canoe from "@/assets/canoe.svg";
 ---
 
 <html lang="en-us">
@@ -62,7 +68,7 @@ const { pageTitle, slug="/" } = Astro.props;
                 routes.map((link: route) => {
                     if (link.visible) {
                     return (
-                        <a href={link.href} class={`${link.href === currSlug ? 'active' : ''} nav-link`}>{link.text}</a>
+                        <a href={link.href} class={`${link.href === slug ? 'active' : ''} nav-link`}>{link.text}</a>
                     )
                     }
                 })

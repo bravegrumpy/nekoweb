@@ -37,7 +37,13 @@ html::after {
     background: linear-gradient(oklch(74.8% 0.24486 142.96 / 0.466), oklch(73.792% 0.1004 226.754 / 0.548));
     --webkit-mask-composite: exclude, include;
     mask-composite: exclude, include;
+    --webkit-mask-repeat: repeat;
+    mask-repeat: repeat;
 }
+
+/* .canoe {
+    position: absolute;
+} */
 
 body {
     background: url("@/assets/images/canoe.png");
@@ -48,28 +54,30 @@ body {
     margin: 0px auto;
     padding: 0px;
     border: 2px solid transparent;
+    /* clip-path: url("#canoe"); */
+    /* background-color: chartreuse; */
+    z-index: 0;
 }
 
 main {
     border: 2px solid transparent;
     max-width: 500px;
     width: fit-content;
-    margin-top: 59%;
-    margin-left: 34%;
+    margin-top: 58%;
+    margin-left: 28%;
 }
 
 nav {
     border: 2px solid transparent;
-    max-width: 200px;
-    overflow-x: scroll;
+    max-width: 250px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: fit-content;
     gap: 10px;
     justify-content: flex-start;
-    align-items: center;
-    background-color: oklch(94.844% 0.04483 78.035 / 0.253);
+    align-items: flex-start;
+    background-color: oklch(94.844% 0.04483 78.035 / 0.11);
 }
 
 .nav-link {
