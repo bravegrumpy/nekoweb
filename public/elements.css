@@ -5,6 +5,9 @@
 */
 
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
+:root {
+    --cyan: #90f5f5;
+}
 .site-box {
     text-align: center;
     background-image: url("https://bravegrumpy.nekoweb.org/css-water.png"); 
@@ -23,11 +26,11 @@
     border: 5px outset blueviolet;
 }
 .site-box > a > p {
-    color: var(--darkbrown);
+    color: var(--cyan);
     font-weight: bold;
 }
 .site-box > a > span {
-    color: var(--darkbrown);
+    color: var(--cyan);
 }
 
 /* Style for your post box (must start with ".post-box") */
