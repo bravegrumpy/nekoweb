@@ -8,11 +8,13 @@
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
 .site-box {
     text-align: center;
-    background-image: url("/css-water.png"); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+    /* background-image: url("/css-water.png"); Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+    background-color: #05055e;
     background-repeat: no-repeat;
     background-size: cover;
     color: #d5f3f3;
     font-size: 16px;
+    border: 5px outset blueviolet;
 }
 .site-box > a > p {
     color: var(--darkbrown);
