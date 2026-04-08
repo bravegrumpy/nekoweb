@@ -1,0 +1,26 @@
+---
+import Layout from "@/layouts/Water.astro";
+const slug = "/alternate-themes/lost";
+import { Image } from "astro:assets";
+import Floaty from "@/assets/images/flotation-tube.png";
+---
+
+<Layout slug={slug} pageTitle="Page Not Found">
+    <div class="floaty">
+        <a href="/">
+            <Image 
+                src={Floaty} 
+                width={800} 
+                height={800} 
+                alt="Flotation Device"
+            />
+        </a>
+    </div>
+</Layout>
+
+<style>
+    .floaty {
+        margin-left: -50%;
+        margin-top: -70%
+    }
+</style>
