@@ -10,8 +10,9 @@
     text-align: center;
     background-image: url("https://bravegrumpy.nekoweb.org/css-water.png"); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
     background-repeat: no-repeat;
-    color: #b08271;
-    font-size: 12px;
+    background-size: cover;
+    color: #d5f3f3;
+    font-size: 16px;
 }
 .site-box > a > p {
     color: var(--darkbrown);
