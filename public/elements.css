@@ -17,6 +17,7 @@
     background-size: cover;
     color: #d5f3f3;
     font-size: 16px;
+    border-radius: 10px;
 }
 .sitefeature {
     max-width: 70%;
