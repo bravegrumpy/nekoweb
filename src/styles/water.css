@@ -26,8 +26,8 @@ html::after {
     inset: 0;
     position: fixed;
     background-size: cover;
-    --webkit-mask-image: url("@/assets/images/textures/TCom_Animated_WaterCaustics_4k_overlay.png"), url("@/assets/images/textures/TCom_Animated_WaterCaustics_512_overlay.png");
-    mask-image: url("@/assets/images/textures/TCom_Animated_WaterCaustics_4k_overlay.png"), url("@/assets/images/textures/TCom_Animated_WaterCaustics_512_overlay.png");
+    --webkit-mask-image: url("@/assets/images/textures/TCom_Animated_WaterCaustics_512_overlay.png"), url("@/assets/images/textures/TCom_Animated_WaterCaustics_512_overlay.png");
+    mask-image: url("@/assets/images/textures/TCom_Animated_WaterCaustics_512_overlay.png"), url("@/assets/images/textures/TCom_Animated_WaterCaustics_512_overlay.png");
     z-index: -1;
     --webkit-mask-mode: luminance;
     mask-mode: luminance;
