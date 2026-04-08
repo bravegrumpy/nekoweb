@@ -27,6 +27,8 @@ const routes: route[] = [
     }
 ]
 
+const currSlug = Astro.url.pathname;
+
 const { pageTitle, slug="/" } = Astro.props;
 ---
 
@@ -48,7 +50,7 @@ const { pageTitle, slug="/" } = Astro.props;
                 routes.map((link: route) => {
                     if (link.visible) {
                     return (
-                        <a href={link.href} class={`${link.href === slug ? 'active' : ''} nav-link`}>{link.text}</a>
+                        <a href={link.href} class={`${link.href === currSlug ? 'active' : ''} nav-link`}>{link.text}</a>
                     )
                     }
                 })
