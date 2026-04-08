@@ -4,9 +4,11 @@ const { frontmatter } = Astro.props;
 
 <div class="card">
     <header>
-        <h2 class="font-serif text-2xl text-primary">{frontmatter.title}</h2>
+        <h2 class="font-serif text-2xl text-primary">
+            {frontmatter.title}
+        </h2>
     </header>
-    <section>
+    <section class="prose prose-headings:text-xl prose-headings:text-secondary text-foreground dark:prose-a:text-primary dark:prose-code:text-secondary prose-ol:list-[upper-alpha] prose-ol:marker:text-secondary prose-ol:marker:font-black prose-ol:marker:font-bio-rhyme prose-ol:marker:text-lg">
         <slot />
     </section>
 </div>

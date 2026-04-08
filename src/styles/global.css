@@ -2,6 +2,7 @@
 @import "basecoat-css";
 @import "./theme.css";
 
+@plugin "@tailwindcss/typography";
 @plugin "@iconify/tailwind4";
 
 
