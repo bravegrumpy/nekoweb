@@ -1,7 +1,10 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "@/layouts/Base.astro";
 const slug = "/games";
 const pageTitle = "Video Games I like"
+
+import AnglerFish from "@/assets/images/fandoms/outer-wilds/Angler_crop.webp";
 ---
 <Layout pageTitle={pageTitle} slug={slug}>
     <div class="card">
@@ -26,6 +29,18 @@ const pageTitle = "Video Games I like"
         <section class="rounded border-2 py-2 w-fit mx-auto border-secondary">
             <p>Every loop is exactly identical.</p>
             <p>This is what makes this method of gameplay work.</p>
+        </section>
+        <section class="rounded border-2 py-2 w-fit mx-auto border-secondary">
+            <h3>THE ANGELAR FISH</h3>
+            <a href="https://outerwilds.fandom.com/wiki/Anglerfish">
+                <Image 
+                    src={AnglerFish}
+                    alt={"Angler Fish"}
+                    width={AnglerFish.width}
+                    height={AnglerFish.height} 
+                />
+            </a>
+            <p>It is so scary. I get jumpscared every. single. time.</p>
         </section>
     </div>
 </Layout>

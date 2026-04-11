@@ -141,5 +141,18 @@
         },
         "footer": "Website page build with AstroJS",
         "display": true
+    },
+    {
+        "id": "flotation tube",
+        "title": "Flotation Tube",
+        "description": "Asset for the 404 page of the <a href='/alternate-themes/water'>water theme</a>",
+        "image": {
+            "src": "@/assets/images/flotation-tube.png",
+            "alt": "Flotation Tube 404 Image",
+            "width": 1920,
+            "height": 1920
+        },
+        "footer": "Digital Art Created with Affinity Photo",
+        "display": true
     }
 ]
